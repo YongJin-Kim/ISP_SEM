@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoAIrange" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAQAABAAAAEAAAAAAEIAAAAgAAAAAACAAAAAI=</HashCode>
+      <FileName>AutoFunction\AutoAIrange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoEmission" Collapsed="true">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAQACEACAAAAkCAAAAAAIgAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>AutoFunction\AutoEmission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoFocus" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACASABAQBKQHAIIEAUCAAALQAAAACgAIADCCgAARAE=</HashCode>
+      <FileName>AutoFunction\AutoFocus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoFocusHelper" Collapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAAAAEAACAAAAAAAAAEAAIAAgAAAAABAAAAAAQA=</HashCode>
+      <FileName>AutoFunction\AutoFocusHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.FocusItem" Collapsed="true">
+    <Position X="29.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAMAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>AutoFunction\AutoFocusHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.FocusList" Collapsed="true">
+    <Position X="21" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAABAABAAAAAAAQAAAAAQACAAAAA=</HashCode>
+      <FileName>AutoFunction\AutoFocusHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoFunctionBase" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADEAAAAwBMAAIQgEAgCIKYAAEDlAYCIIAoAAAbMBAQ=</HashCode>
+      <FileName>AutoFunction\AutoFunctionBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoGunalign" Collapsed="true">
+    <Position X="1" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwhkAAAAQACAAgAAAEADAAAAAQAAAgCEIAAQAAACAIA=</HashCode>
+      <FileName>AutoFunction\AutoGunalign.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoStart" Collapsed="true">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAIAASACEAAAAAAABCgAAYAAAQAAAEAAQAEAAAAI=</HashCode>
+      <FileName>AutoFunction\AutoStart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoSplieTwo" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQAIAAEAIGAGCAAAgAEAAAAAAIAACAgAAAAA=</HashCode>
+      <FileName>AutoFunction\AutoStig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoVideo" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEIAAAAQAAAASAABAARCAAAIAAAAgAAIQAAAAAAAAI=</HashCode>
+      <FileName>AutoFunction\AutoVideo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.AutoWD" Collapsed="true">
+    <Position X="1" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AutoFunction\AutoWD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.AutoFunction.ImageExport" Collapsed="true">
+    <Position X="1" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAABEAAAAIAAAAQAAAAAgQAIAAEAAAgAAA=</HashCode>
+      <FileName>AutoFunction\ImageExport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.ACSwithControlValueDouble" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACIAKAAgQACEAMACAAAAAAEAAAAAAIAAAAA=</HashCode>
+      <FileName>Controls\ACSwithControlValueDouble.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.ACSwithControlValueInt" Collapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAIAAAAACAAIACAAAAAAEAAAAAAIAAAAA=</HashCode>
+      <FileName>Controls\ACSwithControlValueInt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.CheckBoxEllipseWithIControlBool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAAgAACEAIASAAAAAAACAAAAAIAAAAA=</HashCode>
+      <FileName>Controls\CheckBoxEllipseWithIControlBool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.CheckBoxEllipseWithIControlInt" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAAgAACEAIASAAAAAAACAAAAAIAAAAA=</HashCode>
+      <FileName>Controls\CheckBoxEllipseWithIControlInt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.CheckBoxWithIControlBool" Collapsed="true">
+    <Position X="29.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAAAAACAAIASAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Controls\CheckBoxWithIContolBool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.CheckBoxWithIControlInt" Collapsed="true">
+    <Position X="21" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAIAAAAACAAIASAAAAAAACAAAAAIAAAAA=</HashCode>
+      <FileName>Controls\CheckBoxWithIControlInt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.CheckBoxWithIControlValueEnable" Collapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACAAAAAAAACAAIASAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\CheckBoxWithIControlValueEnable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.ColumnValueMonitor" Collapsed="true">
+    <Position X="24.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgEAAASAACAIQCACAAEACAMAAIAAQBAAAAAIAACA=</HashCode>
+      <FileName>Controls\ColumnValueMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.EllipseKnobWithICVD" Collapsed="true">
+    <Position X="26.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAACIAIAAAAACAAMACAAAAAAEAAAAAAIAAAAA=</HashCode>
+      <FileName>Controls\EllipseKnobWithICVD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.FocusControlCvd" Collapsed="true">
+    <Position X="28" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAQAAAgAAAAAAAAACAEAgAAABAQAQAABAAAA=</HashCode>
+      <FileName>Controls\FocusControlCvd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.HswdCvd" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACBACJAAAAgQACEAcACAAAAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>Controls\HswdCvd.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.ListBoxWithIControlTable" Collapsed="true">
+    <Position X="24.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAAAAgACAABADAAAACAAAAAAgAAAAAAQ=</HashCode>
+      <FileName>Controls\ListBoxWithIControlTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.LongscrollWicvdSingle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEgAACAACAEAAAgQBCEAIACAAAAAAEGAAAAAAAAABA=</HashCode>
+      <FileName>Controls\LongscrollWicvdSingle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.LongScrollWithTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAkgAAiAACIAAEAgAACEAIQiAAAABAEAAAAAAABAAMA=</HashCode>
+      <FileName>Controls\LongScrollWithTable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.MagUltarguage" Collapsed="true">
+    <Position X="29.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEgAAACAAAAAAECCAIAADAAEACAAAAAAgAAAgBAA=</HashCode>
+      <FileName>Controls\MagUltarguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.NumericUpDownIControlDouble" Collapsed="true">
+    <Position X="21" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAACCIAIAAAAAKAAIACAAAAAAEAAAACAIAAAAA=</HashCode>
+      <FileName>Controls\NumericUpDownIControlDouble.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.NumericUpDownIControlInt" Collapsed="true">
+    <Position X="22.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAQCCIAIAAAAAKAAIACgAIAAAEAAAACAIAAAAA=</HashCode>
+      <FileName>Controls\NumericUpDownIControlInt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.NumericUpDownIControlLong" Collapsed="true">
+    <Position X="24.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAQCCIAIAAAAAKAAIACgAIAAAEAAAACAIAAAAA=</HashCode>
+      <FileName>Controls\NumericUpDownIControlLong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.PaintPanel" Collapsed="true">
+    <Position X="26.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABsBQAMCgBACAEAAKABBECQAAggEBAIkAAYIAAFgQ=</HashCode>
+      <FileName>Controls\PaintPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.ScalebarDrawer" Collapsed="true">
+    <Position X="28" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAAAAAAAAAAAIAAAAAgAAAAAABAAAAAAA=</HashCode>
+      <FileName>Controls\ScalebarDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.SpotSizeTableSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAgAACIACCAgAACEAIACAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Controls\SpotSizeTableSelector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.TrackBarWithIControlInt" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACABACIAAAAgQACEAcACAAAAAAEAAAAAAAAAABA=</HashCode>
+      <FileName>Controls\TrackBarWithIControlInt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.TrackBarWithIcvd" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQAAAACAAAAAgQACEAIACAAAAAAUAAAAAAAAAABE=</HashCode>
+      <FileName>Controls\TrackBarWithIcvd.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.WaveformMonitor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACChAQAICgBAAAIAACAAIACAAAABAAACAAAAIgEEsQ=</HashCode>
+      <FileName>Controls\WaveformMonitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Controls.WDselector" Collapsed="true">
+    <Position X="26.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEwAAgCAAABAAECCAIAADAAIACAAAALAgAAAgBAA=</HashCode>
+      <FileName>Controls\WDselector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Dialog.ColumnMonitor" Collapsed="true">
+    <Position X="22.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAESABAAAAAACAAEACCIAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Dialog\ColumnMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Dialog.HVmoniter" Collapsed="true">
+    <Position X="24.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8gA0AKVYgCAAAhBAAgDSghQCEACAQQEoEBJEAAAAhCQ=</HashCode>
+      <FileName>Dialog\HVmoniter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.Support.Dialog.LensWobbleForm" Collapsed="true">
+    <Position X="26.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAgAQgADAAAACAgAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Dialog\LensWobbleForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SEC.Nanoeye.Support.AutoFunction.IAutoFunction" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQAMAAIAAAAgAACYAAACFAQCIIAIAAALEAAQ=</HashCode>
+      <FileName>AutoFunction\IAutoFunction.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.Support.AutoFunction.IVideoVlaue" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAIA=</HashCode>
+      <FileName>AutoFunction\IVideoVlaue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.Support.Controls.INanoeyeValueControl" Collapsed="true">
+    <Position X="21" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAEAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\INanoeyeValueControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.Support.Controls.IScanItemPainter" Collapsed="true">
+    <Position X="22.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Controls\IScanItemPainter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

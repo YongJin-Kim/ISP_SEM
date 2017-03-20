@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0322E4B6-7D52-4C15-AD1B-C29B73BC0989}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEC.Nanoeye.Support</RootNamespace>
+    <AssemblyName>NanoeyeSupport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.Misc.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoFunction\AutoAIrange.cs" />
+    <Compile Include="AutoFunction\AutoEmission.cs" />
+    <Compile Include="AutoFunction\AutoFocus.cs" />
+    <Compile Include="AutoFunction\AutoFocusHelper.cs" />
+    <Compile Include="AutoFunction\AutoFunctionBase.cs" />
+    <Compile Include="AutoFunction\AutoGunalign.cs" />
+    <Compile Include="AutoFunction\AutoStart.cs" />
+    <Compile Include="AutoFunction\AutoStig.cs" />
+    <Compile Include="AutoFunction\AutoVideo.cs" />
+    <Compile Include="AutoFunction\AutoWD.cs" />
+    <Compile Include="AutoFunction\DebuggingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoFunction\DebuggingWindow.designer.cs">
+      <DependentUpon>DebuggingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoFunction\DebugginLog.cs" />
+    <Compile Include="AutoFunction\IAutoFunction.cs" />
+    <Compile Include="AutoFunction\ImageExport.cs" />
+    <Compile Include="AutoFunction\IVideoVlaue.cs" />
+    <Compile Include="Controls\CheckBoxEllipseWithIControlBool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxEllipseWithIControlBool.Designer.cs">
+      <DependentUpon>CheckBoxEllipseWithIControlBool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckBoxEllipseWithIControlInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxEllipseWithIControlInt.Designer.cs">
+      <DependentUpon>CheckBoxEllipseWithIControlInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckBoxWithIControlInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxWithIControlInt.Designer.cs">
+      <DependentUpon>CheckBoxWithIControlInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ACSwithControlValueDouble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ACSwithControlValueDouble.Designer.cs">
+      <DependentUpon>ACSwithControlValueDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ACSwithControlValueInt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ACSwithControlValueInt.Designer.cs">
+      <DependentUpon>ACSwithControlValueInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckBoxWithIControlValueEnable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxWithIControlValueEnable.Designer.cs">
+      <DependentUpon>CheckBoxWithIControlValueEnable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckBoxWithIContolBool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxWithIContolBool.Designer.cs">
+      <DependentUpon>CheckBoxWithIContolBool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageForcusBarWithcvd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageForcusBarWithcvd.Designer.cs">
+      <DependentUpon>ImageForcusBarWithcvd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageForcusBarWithTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageForcusBarWithTable.Designer.cs">
+      <DependentUpon>ImageForcusBarWithTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageTrackBarWithTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageTrackBarWithTable.Designer.cs">
+      <DependentUpon>ImageTrackBarWithTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\IScanItemPainter.cs" />
+    <Compile Include="Controls\ListBoxWithIControlTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBoxWithIControlTable.Designer.cs">
+      <DependentUpon>ListBoxWithIControlTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LongScrollWithTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LongScrollWithTable.Designer.cs">
+      <DependentUpon>LongScrollWithTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SpotSizeTableSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SpotSizeTableSelector.Designer.cs">
+      <DependentUpon>SpotSizeTableSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumericUpDownIControlLong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericUpDownIControlLong.Designer.cs">
+      <DependentUpon>NumericUpDownIControlLong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackBarWithIControlInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TrackBarWithIControlInt.Designer.cs">
+      <DependentUpon>TrackBarWithIControlInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackBarWithIcvd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TrackBarWithIcvd.Designer.cs">
+      <DependentUpon>TrackBarWithIcvd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WaveformMonitor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WaveformMonitor.Designer.cs">
+      <DependentUpon>WaveformMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ColumnMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ColumnMonitor.Designer.cs">
+      <DependentUpon>ColumnMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColumnValueMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColumnValueMonitor.Designer.cs">
+      <DependentUpon>ColumnValueMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EllipseKnobWithICVD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EllipseKnobWithICVD.Designer.cs">
+      <DependentUpon>EllipseKnobWithICVD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FocusControlCvd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HswdCvd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HswdCvd.Designer.cs">
+      <DependentUpon>HswdCvd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\INanoeyeValueControl.cs" />
+    <Compile Include="Controls\LongscrollWicvdSingle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LongscrollWicvdSingle.Designer.cs">
+      <DependentUpon>LongscrollWicvdSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MagUltarguage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MagUltarguage.Designer.cs">
+      <DependentUpon>MagUltarguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumericUpDownIControlDouble.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericUpDownIControlDouble.Designer.cs">
+      <DependentUpon>NumericUpDownIControlDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PaintPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PaintPanel.Designer.cs">
+      <DependentUpon>PaintPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScalebarDrawer.cs" />
+    <Compile Include="Controls\WDselector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WDselector.Designer.cs">
+      <DependentUpon>WDselector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumericUpDownIControlInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericUpDownIControlInt.Designer.cs">
+      <DependentUpon>NumericUpDownIControlInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\HVmoniter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\HVmoniter.Designer.cs">
+      <DependentUpon>HVmoniter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\LensWobbleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\LensWobbleForm.Designer.cs">
+      <DependentUpon>LensWobbleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Sampling Times.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Sampling Times.Designer.cs">
+      <DependentUpon>Sampling Times.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoFunction\DebuggingWindow.resx">
+      <DependentUpon>DebuggingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EllipseKnobWithICVD.resx">
+      <DependentUpon>EllipseKnobWithICVD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WaveformMonitor.resx">
+      <DependentUpon>WaveformMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ColumnMonitor.resx">
+      <DependentUpon>ColumnMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColumnValueMonitor.resx">
+      <DependentUpon>ColumnValueMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FocusControlCvd.resx">
+      <DependentUpon>FocusControlCvd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HswdCvd.resx">
+      <DependentUpon>HswdCvd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MagUltarguage.resx">
+      <DependentUpon>MagUltarguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WDselector.resx">
+      <DependentUpon>WDselector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\HVmoniter.resx">
+      <DependentUpon>HVmoniter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\LensWobbleForm.resx">
+      <DependentUpon>LensWobbleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Sampling Times.resx">
+      <DependentUpon>Sampling Times.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GenericSupport\GenericSupport\GenericSupport.csproj">
+      <Project>{A8720C85-F6CF-4834-8386-0C3152205658}</Project>
+      <Name>GenericSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUIbyLoen\GUIelement\GUIelement.csproj">
+      <Project>{56A1D235-F865-4A41-8E7B-10D802AFD6F1}</Project>
+      <Name>GUIelement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nanoeye\Nanoeye\Nanoeye.csproj">
+      <Project>{E48F9279-8C65-48C1-9795-8A14234A8562}</Project>
+      <Name>Nanoeye</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popup_sample_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_minus_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_plus_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_progress_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_progress_bg_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popup_wobble_t_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popup_option_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popup_close_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popup_close_s1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popup_bubble_close_e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_drop1_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_drop1_select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle1_enable_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle1_select_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle1_enable_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle1_select_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle2_enable_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle2_select_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle2_enable_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle2_select_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle2_enable_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_toggle2_select_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_start_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_top_select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_start_enable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_top_select1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_cancel_select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_loading_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\NetAdvantage_WinForms_20092.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
