@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Wizard xmlns="http://www.seceng.co.kr/sem/wizard" Ver="1.0.0" Language="Eng,Kor" Priority="4" Name="Aperture Align">
+	<Equipment>
+		<!--기본적으로 visible을 true로 처리 함.-->
+		<Model target="1500M">false</Model>
+		<Model target="3000M">false</Model>
+	</Equipment>
+	<Index index="0">
+		<Title>
+			<Kor>Aperture align이란?</Kor>
+			<Eng>About aperture align.</Eng>
+		</Title>
+		<Message>
+			<Kor>높은 배율에 선명한 이미지를 얻기 위해서는 apertual align 작업을 해 주어야 합니다.
+Column 내부에 있는 Slave에는 aperture가 들어 있으며, aperture 가운데 구멍을 빔이 통과 하면서 산란된 빔을 걸러 주는 역활을 합니다.
+만약, aperture와 빔의 축이 일치 하지 않는다면, 초점을 변경시 영상이 흐르게 되며 분해능 또한 매우 안좋게 됩니다.
+이때 variable aperture을 조절하여 빔축과 aperture을 일치시키는 작업을 aperture align이라 합니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass"/>
+		<Emphasis/>
+	</Index>
+	<Index index="1">
+		<Title>
+			<Kor>Step 1 : 초점을 맞춥니다.</Kor>
+			<Eng>Step 1 : Find a focus point.</Eng>
+		</Title>
+		<Message>
+			<Kor>WD를 조절 하여 초점을 맞춤니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="True" target="Read">Ready</Column>
+			<Column name="HvEnable" type="True" target="Value">True</Column>
+		</Condition>
+		<Emphasis>
+			<!--Focus-->
+			<Area left="50" top="26" width="228" height="179">frameRightMainUtpc</Area>
+		</Emphasis>
+	</Index>
+	<Index index="2">
+		<Title>
+			<Kor>Step 2 : Focus wobble을 작동 시킵니다.</Kor>
+			<Eng>Step 2 : Enable the focus wobbler.</Eng>
+		</Title>
+		<Message>
+			<Kor>Focus 옆에 "W"버튼이 있습니다. 이 버튼에 마우스 커서를 가져다 놓은 후, 왼쪽 버튼을 누르면 focus wobble가 작동합니다.
+이 버튼 위에서 오른쪽 버튼을 누르면 frequence와 amplitude를 조절 할 수 있는 창이 나타납니다.
+focus wobble은 focus값을 일정 주기로 바꿔주는 역활을 하며, aperture align이 이루어 지지 않았을 경우 focus의 값에 따라 영상이 움직이게 됩니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition>
+			<Column name="VacuumState" type="True" target="Read">Ready</Column>
+			<Column name="HvEnable" type="True" target="Value">True</Column>
+			<Column name="LensObjectWobbleEnable" type="True" target="Value">True</Column>
+		</Condition>
+		<Emphasis>
+			<Control>frMainFocusWobbleCbewicb</Control>
+		</Emphasis>
+	</Index>
+	<Index index="3">
+		<Title>
+			<Kor>Step 3 : Apertual의 손잡이를 움직입니다.</Kor>
+			<Eng>Step 3 : Rotate the variable apertual handle.</Eng>
+		</Title>
+		<Message>
+			<Kor>variable apertual에 있는 손잡이를 돌려, 이미지의 이동을 최소화 시킵니다. 
+이미지의 이동 여부를 판단하기 쉽지 않다면, 좌측 상단의 cross hair을 작동 시켜 화면의 중심 점을 확인 후, 이미지의 이동이 화면의 중심 점에서 가장 작은 지점을 찾습니다. 
+영상의 움직임이 너무 크거나 작다면 amplitude 값을 조절하여 움직이는 량을 변화 시킴니다.
+영사의 움직이는 속도가 적당치 않다면 frequence 값을 조절하여 움직이는 속도를 변화 시킵니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="true" target="Read">Ready</Column>
+			<Column name="HvEnable" type="true" target="Value">true</Column>
+			<Column name="LensObjectWobbleEnable" type="True" target="Value">true</Column>
+		</Condition>
+		<Emphasis>
+			<Control>frMainFocusWobbleCbewicb</Control>
+		</Emphasis>
+	</Index>
+	<Index index="4">
+		<Title>
+			<Kor>Step 4 : 초점을 다시 잡습니다.</Kor>
+			<Eng>Step 4 : Refind a focus pint.</Eng>
+		</Title>
+		<Message>
+			<Kor>어느정도 aperture align작업이 되면 초점값이 변화 합니다.
+focus옆의 "W"버튼을 눌러 focus wobble을 중지 시킨 후 배율을 x1k까지 올리면서 WD를 변화 시켜 다시 초점을 잡습니다.
+			</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="true" target="Read">Ready</Column>
+			<Column name="HvEnable" type="true" target="Value">true</Column>
+			<Column name="LensObjectWobbleEnable" type="True" target="Value">false</Column>
+		</Condition>
+		<Emphasis>
+			<Control>frMainFocusWobbleCbewicb</Control>
+		</Emphasis>
+	</Index>
+	<Index index="5">
+		<Title>
+			<Kor>Step 5 : 배율을 증가 시킵니다.</Kor>
+			<Eng>Step 5 : Increase a magnification.</Eng>
+		</Title>
+		<Message>
+			<Kor>다시 focus wobbler을 작동 시킵니다. 그리고서 약 x10k배 까지 배율을 천천히 확대 하면서 apertual의 손잡이를 조절해 줍니다. 
+영상의 이동 폭이나 속도가 영상을 보는데 적합하지 않다면 Amplitude와 Frequence를 조절해 줍니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="true" target="Read">Ready</Column>
+			<Column name="HvEnable" type="true" target="Value">true</Column>
+			<Column name="LensObjectWobbleEnable" type="true" target="Value">true</Column>
+		</Condition>
+		<Emphasis>
+			<!--Focus-->
+			<Area left="50" top="26" width="228" height="179">frameRightMainUtpc</Area>
+			<!--Magnification-->
+			<Area left="50" top="226" width="228" height="104">frameRightMainUtpc</Area>
+		</Emphasis>
+	</Index>
+	<Index index="6">
+		<Title>
+			<Kor>Step 6 : Aperture align이 완료 되었습니다.</Kor>
+			<Eng>Step 6 : Increase a magnification</Eng>
+		</Title>
+		<Message>
+			<Kor>focus wobbler를 종료 시킵니다.
+이제는 초점을 바꾸어도 영상이 이동하지 않을 것입니다. 또한, 높은 배율에서 작업 전보다 더욱 선명한 이미지가 나타날 것입니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="true" target="Read">Ready</Column>
+			<Column name="HvEnable" type="true" target="Value">true</Column>
+			<Column name="LensObjectWobbleEnable" type="true" target="Value">false</Column>
+		</Condition>
+		<Emphasis/>
+	</Index>
+</Wizard>

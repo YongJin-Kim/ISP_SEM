@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.AboutBox1" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAAAAgAACAhCAUAAACAAAADAAAAEIAAAAAAAACAAAA=</HashCode>
+      <FileName>AboutBox1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.AutoFunctionManager" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQEBARQECQCSAAAAECAAAACAgYQAIAAAEAAIABAAgA=</HashCode>
+      <FileName>AutoFunctionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.BeamShiftCrossPoint" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAACCAAJAAAICAQAECGIAACAAACABAAAAgAYA=</HashCode>
+      <FileName>BeamShiftCrossPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FastScanAreaSelect" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAABAQAI=</HashCode>
+      <FileName>FastScanAreaSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FilamentRunningTime" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAQACAIAACAAgIAgAAAGAAAEAAAAA=</HashCode>
+      <FileName>FilamentRunningTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FilamentRuntimeChecker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAACAAAAAERgAAIAAAgAAAIAAAAAAAAAA=</HashCode>
+      <FileName>FilamentRuntimeChecker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.InfoZone" Collapsed="true">
+    <Position X="6.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAJAgASAAQBAoAAGAAgQCAgAAAQgAAAAAAAEAAAA=</HashCode>
+      <FileName>FormConfig\InfoZone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.MiniSEM" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/8b29f2/0673MBP3/1SqN/vu9e//mRT/9v3Iq1yej74=</HashCode>
+      <FileName>FormMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FormProgressNotify" Collapsed="true">
+    <Position X="0.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACABQUEAAACMgEECQAAgABAAJwAQAAAAASM=</HashCode>
+      <FileName>FormProgressNotify\FormProgressNotify.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.ProgressCheckingEventArgs" Collapsed="true">
+    <Position X="2.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAQBAAAAAAAAAAAAAAAAAAAAAgAAACgAAA=</HashCode>
+      <FileName>FormProgressNotify\ProgressCheckingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FrontPanelList" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAABAAAAICAAAACAIAABAAAwAAAgAAAAAA=</HashCode>
+      <FileName>FrontPanelList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.ImageExportManager" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAIMQAACQBAAICJEAGEAAAIUAABAAAAAAGQAA=</HashCode>
+      <FileName>ImageExportManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.ScreenRecorder" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgJACCAIABBgAACgAACCAAQAgACABCABAAAAACE=</HashCode>
+      <FileName>ScreenRecoder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.ScreenSaverControl" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAACCAAgFAFACCEAAAAAEAAAAgEBBAAAAFAAEBEI=</HashCode>
+      <FileName>ScreenSaverControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.StatusServer" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQABQAAQCIEBABERpCAIUBDQAQBAAAKAABAiAAIAAI=</HashCode>
+      <FileName>StatusServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.StatusServerViewer" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAARhAIADAgAADQAADAEAAAIAAAAAAQAA=</HashCode>
+      <FileName>StatusServerViewer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.SystemInfoBinder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAFABgQAQCBAAYMRIAIEAAhAEQBSAgAAAIAAgIgIY=</HashCode>
+      <FileName>SystemInfoBinder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.TextManager" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAoABASAAACAAAAEAEJCQAAAAAAQAARAYAAAAgCAA=</HashCode>
+      <FileName>TextManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.UIsetBinder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAICAAIBAAIAAJgAAAAABAAAAAACIAhEA=</HashCode>
+      <FileName>UIsetBinder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FormConfig.FormConfigMicroscope" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/ybAIBgAFiGNEXJPQRCw+EBacQJRHcpME+KJCBhLOHc=</HashCode>
+      <FileName>FormConfig\FormConfigMicroscope.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FormConfig.FormConfigOption" Collapsed="true">
+    <Position X="4.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ngCEAAAAAiBAQFAIAACAAAAiABA4ATCAAAABABEBBCI=</HashCode>
+      <FileName>FormConfig\FormConfigOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FormConfig.Microscope" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>vmGIIABKNLC9YzQORhKEqe1q43NEF4ECXgGPZ2OJfhQ=</HashCode>
+      <FileName>FormConfig\Microscope.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.FormConfig.Scanner" Collapsed="true">
+    <Position X="2.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIoACAACDAAAAGADBADAAAIAAEQAAAAAQAAACQ=</HashCode>
+      <FileName>FormConfig\Scanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Initialize.DeviceSelector" Collapsed="true">
+    <Position X="9.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAQAACAAAACQAAIAAEAAMAAAAAAAAA=</HashCode>
+      <FileName>Initialize\DeviceSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Initialize.Initializer" Collapsed="true">
+    <Position X="11.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAIAAQAAAAAAAQAAAAAAAAAAAJAAAAAgAAA=</HashCode>
+      <FileName>Initialize\Initializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Initialize.Splash" Collapsed="true">
+    <Position X="13.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAAGAAAAACgDCAYAACABAAAAAAAAAAAQAABAA=</HashCode>
+      <FileName>Initialize\Splash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEEQECgiQIQEEgIAEDHABDUVE4BHRMJGgaCQCgYI4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Properties.Settings" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAEiWAxIAAqBAAEAIhAASIARYMACBAAACAQFAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Settings.MiniSEM.ManagerMiniSEM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAggIFAAAYAgAAAAAAAAAAAQAAAwAQBAAiAQBAAACA=</HashCode>
+      <FileName>Settings\MiniSEM\ManagerMiniSEM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Settings.MiniSEM.MicroscopeProfile" Collapsed="true">
+    <Position X="11.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gxABCogAAAIAADAYEEKAcDoowIRxA4MFgMgASw4IgcQ=</HashCode>
+      <FileName>Settings\MiniSEM\MicroscopeProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Settings.MiniSEM.ScanningProfile" Collapsed="true">
+    <Position X="11.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACBCAIAAgCIUAAAICACCLQAEAAARAAEAASIABAQIAEM=</HashCode>
+      <FileName>Settings\MiniSEM\ScanningProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Settings.SNE4000M.Manager4000M" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEBAgIFAAAYAgAAAAAAAAAAAQAAAwAUAAAiAQAAAAGA=</HashCode>
+      <FileName>Settings\SNE4000M\Manager4000M.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Settings.SNE4000M.SettingData" Collapsed="true">
+    <Position X="9.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAAwAAQAJABADAQAAAAAgCQBgAAAAAAAEABBI=</HashCode>
+      <FileName>Settings\SNE4000M\SettingData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Template.MiniSEM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAhAAQgCFgAqABgREAQAAAOwA3AyiEQwQAQCA=</HashCode>
+      <FileName>Template\MiniSEM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Template.SNE4000M" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAhAAQACFoAqABARAAQAAAOwA3AwiEQwQAQCA=</HashCode>
+      <FileName>Template\SNE4000M.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Wizard.WizardNodeData" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAwAACACGAEAAACAgAIRQAAAAAAAhEAFAIEAIAAg=</HashCode>
+      <FileName>Wizard\WizardNodeData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeSEM.Wizard.WizardViewer" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFARAICQACIAIAAICBiIIAAGEAFAgAAAgABECEAICCE=</HashCode>
+      <FileName>Wizard\WizardViewer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SEC.Nanoeye.NanoeyeSEM.FormConfig.IMicroscopeSetupWindow" Collapsed="true">
+    <Position X="0.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAABAAAAAAIAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>FormConfig\IMicroscopeSetupWindow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoeyeSEM.Settings.ISettingManager" Collapsed="true">
+    <Position X="9.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAgIFAAAYAAAAAAAAAAAAAQAAAwAQAAAiAQAAAACA=</HashCode>
+      <FileName>Settings\ISettingManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoeyeSEM.Template.ITemplate" Collapsed="true">
+    <Position X="0.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAhAAQACFgAqABARAAAAAAOwA3AwiEQwQAQCA=</HashCode>
+      <FileName>Template\ITemplate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SEC.Nanoeye.NanoeyeSEM.AppDeviceEnum" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAEAAAA=</HashCode>
+      <FileName>Enumurations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoeyeSEM.AppSellerEnum" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAECAAAAAEAAAAAAAAAAAAQAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Enumurations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoeyeSEM.AppModeEnum" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAACAI=</HashCode>
+      <FileName>Enumurations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoeyeSEM.ScanModeEnum" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACAgAAAAAAAAAAAAAAAIAAAAgAAAAIAQACgAQ=</HashCode>
+      <FileName>Enumurations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoeyeSEM.Settings.ColumnOnevalueMode" Collapsed="true">
+    <Position X="14" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAI=</HashCode>
+      <FileName>Settings\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

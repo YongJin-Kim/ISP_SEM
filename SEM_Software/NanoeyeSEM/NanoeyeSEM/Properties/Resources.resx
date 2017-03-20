@@ -1,0 +1,1576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RotationLeftSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotationLeftSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainFrame.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_normal_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_normal_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_record_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_record_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScrollPanelShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScrollPanelShort.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_scroll_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_scroll_bar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightFrame.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_118_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_118_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop1_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop1_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn2_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn2_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagnificationRightSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagnificationRightSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_s_fine_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_s_fine_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop1_click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop1_click.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMagnificationRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMagnificationRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanPause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScanPause.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_rotation_btn1_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_rotation_btn1_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-74.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_start_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_start_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_image_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_image_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_top2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_top2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minus.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-08-m-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-08-m-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanModeSlowScan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScanModeSlowScan.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LeftTriangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeftTriangle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_top_select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_top_select1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_rotation_btn1_select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_rotation_btn1_select1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn16_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn16_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_map_t_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_map_t_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_mtools_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_mtools_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_bottom_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_bottom_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_freeze_click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_freeze_click.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_enable_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_enable_2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_capture_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_capture_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_middle_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_middle_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_top1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_top1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_map_btn_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_map_btn_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-081.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-69.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_minus_enable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_minus_enable2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_select_r_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_select_r_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_archives_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_archives_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_enable_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_enable_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bg_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bg_21.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_over_l_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_over_l_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn7_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn7_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_record_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_record_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="generic_picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\generic_picture.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_thumbnail_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_thumbnail_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushToolButtonSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushToolButtonSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_minus_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_minus_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_ea_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_ea_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_fine_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_fine_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_map_btn_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_map_btn_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_name_drop2_m_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_name_drop2_m_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagnificationLeft1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagnificationLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_click_l1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_click_l1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanModeFastScan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScanModeFastScan.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bg_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bg_2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_color_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_color_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plus.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calibration_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calibration_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRotateLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRotateLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_archives_select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_archives_select1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_top5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_top5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle1_select_l1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle1_select_l1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_select_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_select_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_control_off_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_control_off_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_image_bottom_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_image_bottom_c.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_normal_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_normal_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_select_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_select_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextonIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextonIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_enable_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_enable_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bg_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bg_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn4_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn4_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Text.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="透明logo新" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\透明logo新.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_btn_thumbnail_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_btn_thumbnail_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="senseicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\senseicon.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LampToolButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LampToolButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_tab_enable_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\set_tab_enable_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_rotation_btn1_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_rotation_btn1_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_name_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_name_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_map_btn_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_map_btn_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_btn_point_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_btn_point_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_graph3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_graph3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Area" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Area.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_option_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_option_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_select_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_select_c.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_status_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_status_bg1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_enable_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_enable_c.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_select_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_select_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_enable_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_enable_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotationRightSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotationRightSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCrosshair_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCrosshair_24x24.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_select_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_select_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-08-C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-08-C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_color_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_color_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_select_l1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_select_l1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="status_on1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status_on1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="infobox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infobox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEMTRAC_530x333_Square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEMTRAC_530x333_Square.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splash_bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash_bg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Rectangle.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scanmode_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scanmode_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_reset_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_reset_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_scroll_bar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_scroll_bar1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_76_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_76_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_over_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_over_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_brightness2_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_brightness2_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_select_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_select_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_control_minus_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_control_minus_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_graph.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushRoundButtonRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushRoundButtonRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_bg_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_bg_23.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="status_off1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status_off1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_enable_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_enable_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop1_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop1_over.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_bg_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_bg_22.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_68_select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_68_select1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRotateLeft_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRotateLeft_24x24.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_over_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_over_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Printer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_top3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_top3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-75-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-75-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainFrame_SEMTRAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainFrame_SEMTRAC.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teb_settings_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teb_settings_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagnificationRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagnificationRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_68_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_68_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_rotation_btn2_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_rotation_btn2_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn6_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn6_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-77-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-77-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-57.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_scroll_bg_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_scroll_bg_t.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-09-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-09-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_76_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_76_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-75-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-75-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_enable_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_enable_3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_fine_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_fine_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRotateRight_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRotateRight_24x24.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn14_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn14_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_capture_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_capture_disable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_middle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_middle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop1_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop1_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_plus_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_plus_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_minus_enable3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_minus_enable3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushRoundButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushRoundButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_bubble_close_e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_bubble_close_e.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-05-d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-05-d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_disable_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_disable_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-56.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-76-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-76-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_contrast1_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_contrast1_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_bar_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_bar_info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-83.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FastPhoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FastPhoto.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SlowScan_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SlowScan.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-73" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-73.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop_c_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop_c_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_dot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_dot1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable_l_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable_l_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_minus_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_minus_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Camera_CrossPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Camera_CrossPoint.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ingo_edit_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ingo_edit_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushToolButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushToolButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_disable_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_disable_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error_Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error_Delete.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_bottom_select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_bottom_select1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_history_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_history_title.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bg_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bg_13.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanModeFastPhoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScanModeFastPhoto.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FastScan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FastScan.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_map_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_map_box.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_tab_enable_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\set_tab_enable_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_map_up_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_map_up_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_btn_point_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_btn_point_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_sample_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_sample_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_68_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_68_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotationLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotationLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoiseButtonLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoiseButtonLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_13.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushRoundButtonLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushRoundButtonLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-82.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolStartup_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolStartup_24x24.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScrollPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScrollPanel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Arrow.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_50_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_50_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_close_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_close_s.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_body_select_c1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_body_select_c1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_68_enable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_68_enable2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle1_enable_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle1_enable_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splash_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash_bg1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_50_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_50_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_scroll_bg_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_scroll_bg_b.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_capture_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_capture_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_archives_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_archives_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_click.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagnificationLeftSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagnificationLeftSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_enable_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_enable_4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontPanelBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrontPanelBackground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagnificationLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagnificationLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_minus_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_minus_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_freeze_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_freeze_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightTriangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightTriangle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn15_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn15_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_top4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_top4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_check_sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_check_sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_low_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_low_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn3_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn3_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HardDrive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HardDrive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_66_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_66_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_image_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_image_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_84map_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_84map_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_bg_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_bg_21.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="operation_arrow_select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\operation_arrow_select1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_plus_enable3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_plus_enable3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn8_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn8_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_thumbnail_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_thumbnail_bg1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linear1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Linear.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-77-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-77-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn10_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn10_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_top.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="그림11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\그림11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_control_off_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_control_off_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tab_settings_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tab_settings_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_bar_info_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_bar_info_2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_map_input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_map_input.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_progress_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_progress_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_bottom_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_bottom_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-78-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-78-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_80m_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_80m_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window1_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window1_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotationRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotationRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_top_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_top_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_68_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_68_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_tab_select_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\set_tab_select_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-09-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-09-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FastScan_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FastScan.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRotateRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRotateRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window2_1_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window2_1_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_66_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_66_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-80-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-80-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_middle_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_middle_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window2_2_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window2_2_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_80m_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_80m_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop1_click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop1_click1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_dot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_control_minus_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_control_minus_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_disable_l1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_disable_l1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_checkbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_checkbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable_r_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable_r_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Normal.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-08-p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-08-p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set_tab_select_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\set_tab_select_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoiseButtonRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoiseButtonRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-84" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_bottom_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_bottom_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-54.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window3_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window3_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_rocation_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_rocation_enable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_btn_nor_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_btn_nor_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_color_enable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_color_enable2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_6.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VideoPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VideoPanel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_start_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_start_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_rocation_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_rocation_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_rotation_btn2_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_rotation_btn2_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable_l_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable_l_11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VideoButtonSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VideoButtonSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn14_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn14_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanModeSlowPhoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScanModeSlowPhoto.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMagnificationLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMagnificationLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_118_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_118_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop_click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop_click.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marquois" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marquois.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window1_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window1_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ingo_edit_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ingo_edit_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="operation_arrow_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\operation_arrow_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_50_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_50_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="status_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-79.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-06-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-06-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-08-p-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-08-p-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn1_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn1_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_over_r_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_over_r_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle1_select_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle1_select_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable_l_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable_l_12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn5_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn5_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMeasure_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMeasure_24x24.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_over_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_over_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable_l_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable_l_13.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-79-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-79-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_50_enable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_50_enable2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calibration_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calibration_disable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_s_fine_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_s_fine_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bg_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bg_12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-08-p-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-08-p-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Angle.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splash_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_select_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_select_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_bg_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_bg_2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-06-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-06-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MagnificationPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MagnificationPanel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ellipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Ellipse.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_wid_84_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_wid_84_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_click_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_click_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="operation_arrow_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\operation_arrow_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn4_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn4_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle1_select_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle1_select_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_enable_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_enable_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window2_2_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window2_2_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_enable_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_enable_c.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_over_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_over_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn13_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn13_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SlowScan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SlowScan.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popup_status_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popup_status_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_enable_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_enable_5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window3_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window3_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_btn_thumbnail_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_btn_thumbnail_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_select_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_select_c.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_record_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_record_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle2_select_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle2_select_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bg_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bg_22.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="그림1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\그림1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calibration_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calibration_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_plus_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_plus_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info_dot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="그림12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\그림12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_control_plus_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_control_plus_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_brightness1_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_brightness1_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_select_l1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_select_l1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop_enable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop_enable1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-08-p-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-08-p-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_14.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanModePanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScanModePanel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info_graph2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info_graph2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_rotation_btn1_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_rotation_btn1_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CameraBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CameraBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_freeze_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_freeze_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_small_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_small_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_reset_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_reset_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Length" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image-MeasureTools\Length.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SlowPhoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SlowPhoto.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop1_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop1_disable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VideoButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VideoButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_middle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_middle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_btn_window2_1_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_btn_window2_1_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_start_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_start_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_rec_dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_rec_dot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Align" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Align.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_progress_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_progress_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainFrame_BackColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainFrame_BackColor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="status_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status_on.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_plus_enable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_plus_enable2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-79-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-79-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushToolButtonSmall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushToolButtonSmall1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_select_r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_select_r1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_bottom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_bottom1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_ea_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_ea_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotationPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotationPanel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_rotation_btn1_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_rotation_btn1_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn16_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn16_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon04-08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon04-08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size_controll_bg_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size_controll_bg_11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_contrast2_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_contrast2_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanModeScanPause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScanModeScanPause.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_top_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_top_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon02-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon02-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_loading_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_loading_2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_controll_big_select_l_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_controll_big_select_l_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_name_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_name_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_control_plus_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_control_plus_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_drop2_top_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_drop2_top_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_toggle1_enable_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_toggle1_enable_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn11_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn11_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtools_btn9_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtools_btn9_enable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_cancel_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_cancel_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_control_middle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_control_middle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon01-47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon01-47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_scan_low_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_scan_low_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splash_bg11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash_bg11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="white logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\white logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon05_01_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon05-01-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

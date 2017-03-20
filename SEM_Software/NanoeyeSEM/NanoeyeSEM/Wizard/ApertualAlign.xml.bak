@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Wizard xmlns="http://www.seceng.co.kr/sem/wizard" Ver="1.0.0" Language="Eng,Kor" Priority="4" Name="Apertual Align">
+	<Equipment>
+		<!--기본적으로 visible을 true로 처리 함.-->
+		<Model target="1500M">false</Model>
+		<Model target="3000M">false</Model>
+	</Equipment>
+	<Index index="0">
+		<Title>
+			<Kor>Apertual align이란?</Kor>
+			<Eng>About apertual align</Eng>
+		</Title>
+		<Message>
+			<Kor>대물렌즈 조리개의 중심과 대물렌즈의 축이 맞아 있지 않으면 상의 초점을 맞추었을 때에 상이 화면에서 움직이는 현상이 일어난다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass"/>
+		<Emphasis/>
+	</Index>
+	<Index index="1">
+		<Title>
+			<Kor>Step 1 : 초점을 맞춥니다.</Kor>
+			<Eng>Step 1 : Find a focus point</Eng>
+		</Title>
+		<Message>
+			<Kor>WD를 조절 하여 초점을 맞춤니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="True" target="Read">Ready</Column>
+			<Column name="HvEnable" type="True" target="Value">True</Column>
+		</Condition>
+		<Emphasis>
+			<Area>Focus</Area>
+		</Emphasis>
+	</Index>
+	<Index index="2">
+		<Title>
+			<Kor>Step 2 : Focus wobble을 작동 시킵니다.</Kor>
+			<Eng>Step 2 : Enable the focus wobbler</Eng>
+		</Title>
+		<Message>
+			<Kor>Focus 옆의 wobble을 좌 클릭 하여 focus wobble을 작동 시킵니다.
+wobble을 우 클릭 하면 frequence와 amplitude를 조절 할 수 있는 창이 나타납니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition>
+			<Column name="VacuumState" type="True" target="Read">Ready</Column>
+			<Column name="HvEnable" type="True" target="Value">True</Column>
+			<Column name="LensObjectWobbleEnable" type="True" target="Value">True</Column>
+		</Condition>
+		<Emphasis>
+			<Control>frMainFocusWobbleCbewicb</Control>
+		</Emphasis>
+	</Index>
+	<Index index="3">
+		<Title>
+			<Kor>Step 3 : Apertual의 손잡이를 움직입니다</Kor>
+			<Eng>Step 3 : Rotate the variable apertual handle</Eng>
+		</Title>
+		<Message>
+			<Kor>Apertual에 있는 손잡이를 돌려, 이미지의 이동을 최소화 시킵니다. 
+이미지의 이동 여부를 판단하기 쉽지 않다면, 좌측 상단의 cross hair을 작동 시켜 화면의 중심 점을 확인 후, 이미지의 이동이 화면의 중심 점에서 가장 작은 지점을 찾습니다. 
+영상의 움직임이 너무 크거나 작다면 Amplitude 값을 조절하여 움직이는 량을 변화 시킴니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="true" target="Read">Ready</Column>
+			<Column name="HvEnable" type="true" target="Value">true</Column>
+			<Column name="LensObjectWobbleEnable" type="True" target="Value">true</Column>
+			<UI name="focusWobbleUpcc" type="True" target="IsDisplayed">True</UI>
+		</Condition>
+		<Emphasis>
+			<Control>frMainFocusWobbleCbewicb</Control>
+		</Emphasis>
+	</Index>
+	<Index index="4">
+		<Title>
+			<Kor>Step 4 : 배율을 증가 시킵니다</Kor>
+			<Eng>Step 4 : Increase a magnification</Eng>
+		</Title>
+		<Message>
+			<Kor>약 x10k배 까지 배율을 천천히 확대 하면서 apertual의 손잡이를 조절해 줍니다. 
+영상의 이동 폭이나 속도가 영상을 보는데 적합하지 않다면 Amplitude와 Frequence를 조절해 줍니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition mode="Pass">
+			<Column name="VacuumState" type="true" target="Read">Ready</Column>
+			<Column name="HvEnable" type="true" target="Value">true</Column>
+			<Column name="LensObjectWobbleEnable" type="true" target="Value">true</Column>
+			<UI name="focusWobbleUpcc" type="true" target="IsDisplayed">true</UI>
+		</Condition>
+		<Emphasis>
+			<Area>Focus</Area>
+			<Area>Magnification</Area>
+		</Emphasis>
+	</Index>
+</Wizard>

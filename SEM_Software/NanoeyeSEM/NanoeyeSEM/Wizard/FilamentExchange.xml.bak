@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Wizard xmlns="http://www.seceng.co.kr/sem/wizard" Ver="1.0.0" Language="Eng,Kor" Priority="1" Name="Filament Exchange">
+	<Index index="0">
+		<Title>
+			<Kor>Filament exchange란?</Kor>
+			<Eng>About filament exchange</Eng>
+		</Title>
+		<Message>
+			<Kor>전자빔 방출을 위해 사용되는 텅스텐 필라멘트는 수명이 있어, 일정시간 이상 사용하면 끊어지게 됩니다.
+필라멘트가 끊어질 경우 영상이 나오지 않고, Emission Currentr가 감소하여 Filament 전류를 값을 변경 시켜도 변화가 없게 됩니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition  Mode="Pass"/>
+		<Emphasis/>
+	</Index>
+	<Index index="1">
+		<Title>
+			<Kor>Step 1 : 진공 해제</Kor>
+			<Eng>Step 1 : Vent equipment</Eng>
+		</Title>
+		<Message>
+			<Kor>장비 전면의 진공 버튼을 눌러 진공을 해제 합니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath>.\Wizard\wizardFrontpanel.JPG</ImagePath>
+		<Condition>
+			<Column Name="VacuumState" Type="true" Target="Read">Air</Column>
+		</Condition>
+		<Emphasis/>
+	</Index>
+	<Index index="2">
+		<Title>
+			<Kor>Step 2 : 필라멘트 교환 커버를 엽니다.</Kor>
+			<Eng>Step 2 : Open the filament exchange cover</Eng>
+		</Title>
+		<Message>
+			<Kor>필라멘트 교환 커버를 열어 전자총을 확인 합니다.
+고압 방출시에는 전자총 부분이 가열 되므로, 장비의 진공을 해제 한 후에도 높은 온도를 유지하므로 화상에 주의 해야 합니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath>.\Wizard\wizardGun.JPG</ImagePath>
+		<Condition Mode="Pass">
+			<Column Name="VacuumState" Type="true" Target="Read">Air</Column>
+		</Condition>
+		<Emphasis/>
+	</Index>
+	<Index index="3">
+		<Title>
+			<Kor>Step 3 : 전자총을 분리 합니다.</Kor>
+			<Eng>Step 3 : ???</Eng>
+		</Title>
+		<Message>
+			<Kor>Filament exchange knob 4개 모두 반시계 방향으로 돌려 전자총을 Column에서 분리 합니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath>.\Wizard\wizardGunAlign.JPG</ImagePath>
+		<Condition Mode="Pass">
+			<Column Name="VacuumState" Type="true" Target="Read">Air</Column>
+		</Condition>
+		<Emphasis/>
+	</Index>
+	<Index index="4">
+		<Title>
+			<Kor>Step 4 : 전자총에서 필라멘트를 분리 합니다.</Kor>
+			<Eng>Step 4 : ???</Eng>
+		</Title>
+		<Message>
+			<Kor>필라멘트를 고정 시키는 캡을 돌려서 분리 후, 필라멘트를 당겨서 전자총과 분리 시킵니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath>.\Wizard\wizardFilamnet.JPG</ImagePath>
+		<Condition Mode="Pass">
+			<Column Name="VacuumState" Type="true" Target="Read">Air</Column>
+		</Condition>
+		<Emphasis/>
+	</Index>
+	<Index index="5">
+		<Title>
+			<Kor>Step 5 : 새 필라멘트를 Gun에 조립합니다.</Kor>
+			<Eng>Step 5 : ???</Eng>
+		</Title>
+		<Message>
+			<Kor>새 필라멘트를 전자총에 조립합니다.
+필라멘트 조립 후 캡을 씌워 줘야 합니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath>.\Wizard\wizardFilamnetOff.JPG</ImagePath>
+		<Condition Mode="Pass">
+			<Vacuum Type="true">Air</Vacuum>
+		</Condition>
+		<Emphasis/>
+	</Index>
+	<Index index="6">
+		<Title>
+			<Kor>Step 6 : 전자총을 Column에 조립 합니다.</Kor>
+			<Eng>Step 6 : ???</Eng>
+		</Title>
+		<Message>
+			<Kor>전자총을 Column에 올립니다.
+이때 전자총과 Column 사이에 있는 Oring이 정상적으로 자리하고 있는지 확인 합니다.
+다음으로 Filament exchange knob 4개 모두 시계 방향으로 돌려 전자총을 고정 합니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath>.\Wizard\wizardGun.JPG</ImagePath>
+		<Condition Mode="Pass">
+			<Column Name="VacuumState" Type="true" Target="Read">Air</Column>
+		</Condition>
+		<Emphasis/>
+	</Index>
+	<Index index="7">
+		<Title>
+			<Kor>Step 7 : 진공을 잡습니다.</Kor>
+			<Eng>Step 7 : ???</Eng>
+		</Title>
+		<Message>
+			<Kor>장비 전면의 진공 버튼을 눌러 진공을 잡습니다.
+진공을 잡는 중 에러가 발생 한다면, 다시 전자총 부분을 Column과 분리 후, Oring이 정상적인 위치에 있는지 확인 합니다.
+진공 프로세스가 완료 되면 Gun Align 작업을 해 주어야 합니다.</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath>.\Wizard\wizardFrontpanel.JPG</ImagePath>
+		<Condition>
+			<Column Name="VacuumState" Type="false" Target="Read">Air</Column>
+		</Condition>
+		<Emphasis/>
+	</Index>
+</Wizard> 

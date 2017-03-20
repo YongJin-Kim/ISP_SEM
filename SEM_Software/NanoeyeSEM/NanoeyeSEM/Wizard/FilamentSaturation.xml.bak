@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Wizard xmlns="http://www.seceng.co.kr/sem/wizard" Ver="1.0.0" Language="Eng,Kor" Priority="3" Name="Filament Sautration">
+	<Index index="0">
+		<Title>
+			<Kor>Filament saturation이란?</Kor>
+			<Eng>About filament saturation</Eng>
+		</Title>
+		<Message>
+			<Kor>
+				필라멘트 가열 온도에 따라 방출되는 빔의 양이 결정 됩니다.
+				최적의 필라멘트 가열 지점을 찾았을 때 Saturation(포화)되었다 하며, 이때 필라멘트의 온도는 약 2700K입니다.
+				최적의 지점을 찾아야지 만이, 충분한 빔의 양이 나오면서 필라멘트를 오래 사용 할 수 있습니다.
+			</Kor>
+			<Eng>Neeed message.</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition/>
+		<Emphasis/>
+	</Index>
+	<Index index="1">
+		<Title>
+			<Kor>Step 1 : 고압을 켭니다.</Kor>
+			<Eng>Step 1 : Turn on the H.V.</Eng>
+		</Title>
+		<Message>
+			<Kor>
+				화면 좌측 상단의 가속 전압 버튼을 이용하여 고압을 켭니다.
+				작업 전에는 반듯이 장비에 진공이 잡혀 있어야 합니다.
+			</Kor>
+			<Eng>
+				Neeed message.
+			</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition>
+			<Column Name="VacuumState" Type="true" Target="Read">Ready</Column>
+			<Column Name="HvEnable" Type="true" Target="Value">true</Column>
+		</Condition>
+		<Emphasis>
+			<Control>m_ToolStartup</Control>
+		</Emphasis>
+	</Index>
+	<Index index="2">
+		<Title>
+			<Kor>Step 2 : Filament의 saturation 지점을 찾습니다.</Kor>
+			<Eng>Step 2 : Find the filament saturation point.</Eng>
+		</Title>
+		<Message>
+			<Kor>
+				filament 조절 바를 조작 하여, saturation 지점을 찾습니다.
+				Scan 모드는 Fast Scan을 사용 하시는 것이 좋습니다.
+			</Kor>
+			<Eng>
+				Neeed message.
+			</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition>
+			<Column Name="VacuumState" Type="true" Target="Read">Ready</Column>
+			<Column Name="HvEnable" Type="true" Target="Value">true</Column>
+			<UI Name="toolAlign" Type="true" Target="Checked">true</UI>
+		</Condition>
+		<Emphasis>
+			<Control>toolAlign</Control>
+			<Control>alignHVF</Control>
+		</Emphasis>
+	</Index>
+	<Index index="3">
+		<Title>
+			<Kor>Step 3 : Emmission Current를 조절 합니다..</Kor>
+			<Eng>Step 3 : ???.</Eng>
+		</Title>
+		<Message>
+			<Kor>
+				Grid를 조절하여 원하는 Emission이 되도록 합니다.
+				일반적으로 약 110uA에 맞춤니다.
+			</Kor>
+			<Eng>
+				Neeed message.
+			</Eng>
+		</Message>
+		<ImagePath/>
+		<Condition>
+			<Column Name="VacuumState" Type="true" Target="Read">Ready</Column>
+			<Column Name="HvEnable" Type="true" Target="Value">true</Column>
+			<UI Name="toolAlign" Type="true" Target="Checked">true</UI>
+		</Condition>
+		<Emphasis>
+			<Control>toolAlign</Control>
+			<Control>alignHVG</Control>
+		</Emphasis>
+	</Index>	
+</Wizard>

@@ -1,0 +1,1772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFABFA91-D9AA-47BB-89BD-1A965CFFDD71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEC.Nanoeye.NanoeyeSEM</RootNamespace>
+    <AssemblyName>SenseSEM</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>E1FC725F5FFA2109DAF1C2B262DACA6675CB0392</ManifestCertificateThumbprint>
+    <ManifestKeyFile>NanoeyeSEM_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationIcon>senseicon.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>d:\project\NanoeyeSEM\Software\Release\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>Mini-SEM</ProductName>
+    <PublisherName>SEC</PublisherName>
+    <WebPage>www.seceng.co.kr</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.SupportDialogs.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v9.2.FormulaBuilder, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinListBar.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinListView.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v9.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MultiMedia">
+      <HintPath>..\..\SoftwareModule\MultiMedia\MultiMedia\bin\x86\Debug\MultiMedia.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp">
+      <HintPath>..\..\..\..\..\Utill\OpenCvSharp-2.4.5-x86-20130512\OpenCvSharp-2.4.5-x86-20130512\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface">
+      <HintPath>..\..\..\..\..\Utill\OpenCvSharp-2.4.5-x86-20130512\OpenCvSharp-2.4.5-x86-20130512\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Windows7.Multitouch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\유틸\TouchDataVisualization\TouchDataVisualization\bin\Debug\Windows7.Multitouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows7.Multitouch.WinForms">
+      <HintPath>..\..\..\..\..\..\유틸\TouchDataVisualization\TouchDataVisualization\bin\Debug\Windows7.Multitouch.WinForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoFunctionManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoFunctionManager.Designer.cs">
+      <DependentUpon>AutoFunctionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enumurations.cs" />
+    <Compile Include="FormConfig\ArchivesTabCB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\ArchivesTabCB.Designer.cs">
+      <DependentUpon>ArchivesTabCB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\CameraCBcontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\CameraCBcontrol.Designer.cs">
+      <DependentUpon>CameraCBcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\DaulDetector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\DaulDetector.Designer.cs">
+      <DependentUpon>DaulDetector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\IMicroscopeSetupWindow.cs" />
+    <Compile Include="FormConfig\Measurement Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\Measurement Tools.Designer.cs">
+      <DependentUpon>Measurement Tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\MotorSpeedSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\MotorSpeedSetting.designer.cs">
+      <DependentUpon>MotorSpeedSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\MotorStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\MotorStage.designer.cs">
+      <DependentUpon>MotorStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\Operation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\Operation.Designer.cs">
+      <DependentUpon>Operation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\SamplingTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\SamplingTime.Designer.cs">
+      <DependentUpon>SamplingTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\UserSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\UserSettings.Designer.cs">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.ko-KR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormMain.ko-KR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainTest.Designer.cs">
+      <DependentUpon>FormMainTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Initialize\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initialize\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageResources\MultiLanguage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiLanguage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageResources\MultiLanguage.zh-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiLanguage.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordChange.designer.cs">
+      <DependentUpon>PasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\AIOsem\Manager4500P.cs" />
+    <Compile Include="Settings\AIOsem\SettingData.cs">
+      <DependentUpon>SettingData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings\AIOsem\SettingData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettingData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\SNE4000M\SettingData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettingData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatusServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusServer.Designer.cs">
+      <DependentUpon>StatusServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ITemplate.cs" />
+    <Compile Include="Template\MiniSEM.cs" />
+    <Compile Include="Template\SNE4000M.cs" />
+    <Compile Include="FastScanAreaSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastScanAreaSelect.Designer.cs">
+      <DependentUpon>FastScanAreaSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilamentRunningTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilamentRunningTime.Designer.cs">
+      <DependentUpon>FilamentRunningTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilamentRuntimeChecker.cs" />
+    <Compile Include="FormConfig\FormConfigOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\FormConfigOption.Designer.cs">
+      <DependentUpon>FormConfigOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\FormConfigMicroscope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\FormConfigMicroscope.Designer.cs">
+      <DependentUpon>FormConfigMicroscope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\Microscope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\Microscope.designer.cs">
+      <DependentUpon>Microscope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig\Scanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\Scanner.designer.cs">
+      <DependentUpon>Scanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProgressNotify\FormProgressNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgressNotify\FormProgressNotify.Designer.cs">
+      <DependentUpon>FormProgressNotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProgressNotify\ProgressCheckingEventArgs.cs" />
+    <Compile Include="ImageExportManager.cs" />
+    <Compile Include="Initialize\DeviceSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initialize\DeviceSelector.designer.cs">
+      <DependentUpon>DeviceSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeamShiftCrossPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeamShiftCrossPoint.designer.cs">
+      <DependentUpon>BeamShiftCrossPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontPanelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontPanelList.Designer.cs">
+      <DependentUpon>FrontPanelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Initialize\Initializer.cs" />
+    <Compile Include="FormConfig\InfoZone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig\InfoZone.Designer.cs">
+      <DependentUpon>InfoZone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoFunctionManager.resx">
+      <DependentUpon>AutoFunctionManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastScanAreaSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FastScanAreaSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilamentRunningTime.resx">
+      <DependentUpon>FilamentRunningTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\ArchivesTabCB.fr.resx">
+      <DependentUpon>ArchivesTabCB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\ArchivesTabCB.ko-KR.resx">
+      <DependentUpon>ArchivesTabCB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\ArchivesTabCB.resx">
+      <DependentUpon>ArchivesTabCB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\ArchivesTabCB.ru-RU.resx">
+      <DependentUpon>ArchivesTabCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\ArchivesTabCB.zh-CN.resx">
+      <DependentUpon>ArchivesTabCB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\CameraCBcontrol.fr.resx">
+      <DependentUpon>CameraCBcontrol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\CameraCBcontrol.ko-KR.resx">
+      <DependentUpon>CameraCBcontrol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\CameraCBcontrol.resx">
+      <DependentUpon>CameraCBcontrol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\CameraCBcontrol.ru-RU.resx">
+      <DependentUpon>CameraCBcontrol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\CameraCBcontrol.zh-CN.resx">
+      <DependentUpon>CameraCBcontrol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\DaulDetector.resx">
+      <DependentUpon>DaulDetector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\FormConfigOption.resx">
+      <DependentUpon>FormConfigOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\FormConfigMicroscope.resx">
+      <DependentUpon>FormConfigMicroscope.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\InfoZone.fr.resx">
+      <DependentUpon>InfoZone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\InfoZone.ko-KR.resx">
+      <DependentUpon>InfoZone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\InfoZone.ru-RU.resx">
+      <DependentUpon>InfoZone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\InfoZone.zh-CN.resx">
+      <DependentUpon>InfoZone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Measurement Tools.fr.resx">
+      <DependentUpon>Measurement Tools.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Measurement Tools.ko-KR.resx">
+      <DependentUpon>Measurement Tools.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Measurement Tools.resx">
+      <DependentUpon>Measurement Tools.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Measurement Tools.ru-RU.resx">
+      <DependentUpon>Measurement Tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Measurement Tools.zh-CN.resx">
+      <DependentUpon>Measurement Tools.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Microscope.resx">
+      <DependentUpon>Microscope.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\MotorSpeedSetting.resx">
+      <DependentUpon>MotorSpeedSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\MotorStage.fr.resx">
+      <DependentUpon>MotorStage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\MotorStage.resx">
+      <DependentUpon>MotorStage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Operation.fr.resx">
+      <DependentUpon>Operation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Operation.ko-KR.resx">
+      <DependentUpon>Operation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Operation.resx">
+      <DependentUpon>Operation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Operation.ru-RU.resx">
+      <DependentUpon>Operation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Operation.zh-CN.resx">
+      <DependentUpon>Operation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\SamplingTime.fr.resx">
+      <DependentUpon>SamplingTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\SamplingTime.ko-KR.resx">
+      <DependentUpon>SamplingTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\SamplingTime.resx">
+      <DependentUpon>SamplingTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\SamplingTime.ru-RU.resx">
+      <DependentUpon>SamplingTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\SamplingTime.zh-CN.resx">
+      <DependentUpon>SamplingTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\Scanner.resx">
+      <DependentUpon>Scanner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\UserSettings.resx">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.fr.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.ko-KR.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FormMain.ko-KR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.ko.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.ru-RU.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.sr-Cyrl-CS.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-CN.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-Hans.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainTest.resx">
+      <DependentUpon>FormMainTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProgressNotify\FormProgressNotify.resx">
+      <DependentUpon>FormProgressNotify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initialize\DeviceSelector.resx">
+      <DependentUpon>DeviceSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeamShiftCrossPoint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BeamShiftCrossPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontPanelList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrontPanelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig\InfoZone.resx">
+      <DependentUpon>InfoZone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initialize\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageResources\MultiLanguage.ko-KR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageResources\MultiLanguage.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MultiLanguage.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageResources\MultiLanguage.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MultiLanguage.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageResources\MultilLanguage.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordChange.resx">
+      <DependentUpon>PasswordChange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusServerViewer.resx">
+      <DependentUpon>StatusServerViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardViewer.resx">
+      <DependentUpon>WizardViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenSaverControl.cs" />
+    <Compile Include="Settings\Enumerations.cs" />
+    <Compile Include="Settings\ISettingManager.cs" />
+    <Compile Include="Settings\MiniSEM\MicroscopeProfile.cs" />
+    <Compile Include="Settings\MiniSEM\MicroscopeProfile.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MicroscopeProfile.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\MiniSEM\ScanningProfile.cs" />
+    <Compile Include="Settings\MiniSEM\ScanningProfile.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ScanningProfile.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\MiniSEM\ManagerMiniSEM.cs" />
+    <Compile Include="Settings\SNE4000M\SettingData.cs">
+      <DependentUpon>SettingData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings\SNE4000M\Manager4000M.cs" />
+    <Compile Include="SystemInfoBinder.cs" />
+    <Compile Include="Template\SNE4500P.cs" />
+    <Compile Include="TextManager.cs" />
+    <Compile Include="UIsetBinder.cs" />
+    <Compile Include="StatusServerViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusServerViewer.Designer.cs">
+      <DependentUpon>StatusServerViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardViewer.Designer.cs">
+      <DependentUpon>WizardViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardNodeData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="camera.ico" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Resources\PushToolButtonSmall1.png" />
+    <None Include="Resources\MagnificationLeftSmall.png" />
+    <None Include="Resources\MagnificationRightSmall.png" />
+    <None Include="Resources\RotationLeftSmall.png" />
+    <None Include="Resources\RotationRightSmall.png" />
+    <Content Include="Resources\bg.png" />
+    <None Include="Resources\bg1.png" />
+    <None Include="Resources\bg_control_bottom.png" />
+    <None Include="Resources\bg_control_bottom1.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\bg_image_bottom_c.png" />
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\title_btn_window1_enable.png" />
+    <None Include="Resources\그림1.png" />
+    <None Include="Resources\그림11.png" />
+    <None Include="Resources\title_btn_window2_1_enable.png" />
+    <None Include="Resources\title_btn_window3_enable.png" />
+    <None Include="Resources\bg_control_top.png" />
+    <None Include="Resources\bg_control_top1.png" />
+    <None Include="Resources\bg_control_top2.png" />
+    <None Include="Resources\bg_control_middle.png" />
+    <None Include="Resources\infobox.png" />
+    <None Include="Resources\btn_toggle1_enable_l.png" />
+    <None Include="Resources\btn_toggle1_enable_r.png" />
+    <None Include="Resources\btn_toggle2_enable_l.png" />
+    <None Include="Resources\btn_toggle2_enable_c.png" />
+    <None Include="Resources\btn_toggle2_enable_r.png" />
+    <None Include="Resources\control_start_enable.png" />
+    <None Include="Resources\control_start_enable1.png" />
+    <None Include="Resources\btn_drop1_enable.png" />
+    <None Include="Resources\btn_drop1_enable1.png" />
+    <None Include="Resources\tab_image_enable.png" />
+    <None Include="Resources\tab_archives_enable.png" />
+    <None Include="Resources\tab_settings_enable.png" />
+    <None Include="Resources\btn_wid_50_enable.png" />
+    <None Include="Resources\btn_reset_enable.png" />
+    <None Include="Resources\btn_controll_enable.png" />
+    <None Include="Resources\btn_wid_66_enable.png" />
+    <None Include="Resources\btn_controll_big_enable.png" />
+    <None Include="Resources\btn_controll_small_enable.png" />
+    <None Include="Resources\tab_body_enable.png" />
+    <None Include="Resources\tab_body_select_c.png" />
+    <None Include="Resources\btn_wid_50_enable1.png" />
+    <None Include="Resources\btn_ea_enable.png" />
+    <None Include="Resources\btn_plus_enable.png" />
+    <None Include="Resources\btn_progress_bg.png" />
+    <None Include="Resources\btn_plus_enable1.png" />
+    <None Include="Resources\btn_minus_enable.png" />
+    <None Include="Resources\info_dot.png" />
+    <None Include="Resources\btn_progress_dot.png" />
+    <None Include="Resources\btn_progress_bar_info.png" />
+    <None Include="Resources\btn_wid_84_enable.png" />
+    <None Include="Resources\btn_wid_84map_enable.png" />
+    <None Include="Resources\btn_wid_80m_enable.png" />
+    <None Include="Resources\btn_capture_enable.png" />
+    <None Include="Resources\btn_freeze_click.png" />
+    <None Include="Resources\btn_scan_low_enable.png" />
+    <None Include="Resources\btn_scan_normal_enable.png" />
+    <None Include="Resources\btn_scan_fine_enable.png" />
+    <None Include="Resources\btn_scan_s_fine_enable.png" />
+    <None Include="Resources\btn_contrast1_enable.png" />
+    <None Include="Resources\btn_contrast2_enable.png" />
+    <None Include="Resources\btn_brightness1_enable.png" />
+    <None Include="Resources\btn_brightness2_enable.png" />
+    <None Include="Resources\btn_drop1_click.png" />
+    <None Include="Resources\btn_toggle1_select_l.png" />
+    <None Include="Resources\btn_toggle1_select_r.png" />
+    <None Include="Resources\btn_toggle1_select_l1.png" />
+    <None Include="Resources\btn_toggle2_select_l.png" />
+    <None Include="Resources\btn_toggle2_select_c.png" />
+    <None Include="Resources\btn_toggle2_select_r.png" />
+    <None Include="Resources\control_start_select.png" />
+    <None Include="Resources\operation_arrow_enable.png" />
+    <None Include="Resources\operation_arrow_select.png" />
+    <None Include="Resources\tab_archives_select.png" />
+    <None Include="Resources\tab_archives_select1.png" />
+    <None Include="Resources\tab_image_select.png" />
+    <None Include="Resources\teb_settings_select.png" />
+    <None Include="Resources\btn_ea_select.png" />
+    <None Include="Resources\btn_wid_80m_select.png" />
+    <None Include="Resources\btn_drop2_bottom_enable.png" />
+    <None Include="Resources\btn_drop2_bottom_enable1.png" />
+    <None Include="Resources\btn_drop2_bottom_select.png" />
+    <None Include="Resources\btn_drop2_middle_enable.png" />
+    <None Include="Resources\btn_drop2_bottom_select1.png" />
+    <None Include="Resources\btn_drop2_middle_select.png" />
+    <None Include="Resources\btn_drop2_top_enable.png" />
+    <None Include="Resources\btn_drop2_top_select.png" />
+    <None Include="Resources\control_loading_1.png" />
+    <None Include="Resources\control_loading_11.png" />
+    <None Include="Resources\control_cancel_select.png" />
+    <None Include="Resources\control_loading_2.png" />
+    <None Include="Resources\control_loading_3.png" />
+    <None Include="Resources\control_loading_4.png" />
+    <None Include="Resources\control_loading_5.png" />
+    <None Include="Resources\control_loading_6.png" />
+    <None Include="Resources\btn_wid_50_select.png" />
+    <None Include="Resources\btn_wid_50_enable2.png" />
+    <None Include="Resources\btn_reset_select.png" />
+    <None Include="Resources\btn_controll_click.png" />
+    <None Include="Resources\btn_wid_66_select.png" />
+    <None Include="Resources\btn_controll_small_select.png" />
+    <None Include="Resources\tab_body_enable_l.png" />
+    <None Include="Resources\tab_body_select_l.png" />
+    <None Include="Resources\tab_body_enable_c.png" />
+    <None Include="Resources\tab_body_enable_r.png" />
+    <None Include="Resources\tab_body_select_c1.png" />
+    <None Include="Resources\tab_body_select_r.png" />
+    <None Include="Resources\btn_freeze_select.png" />
+    <None Include="Resources\btn_freeze_enable.png" />
+    <None Include="Resources\btn_scan_s_fine_select.png" />
+    <None Include="Resources\btn_scan_low_select.png" />
+    <None Include="Resources\btn_scan_normal_select.png" />
+    <None Include="Resources\btn_scan_fine_select.png" />
+    <None Include="Resources\btn_capture_select.png" />
+    <None Include="Resources\operation_arrow_select1.png" />
+    <None Include="Resources\btn_minus_select.png" />
+    <None Include="Resources\title_btn_window1_select.png" />
+    <None Include="Resources\title_btn_window2_1_select.png" />
+    <None Include="Resources\title_btn_window3_select.png" />
+    <None Include="Resources\size_controll_progress_bg.png" />
+    <None Include="Resources\size_controll_bar.png" />
+    <None Include="Resources\size_rotation_btn1_over.png" />
+    <None Include="Resources\size_rotation_btn1_select.png" />
+    <None Include="Resources\size_rotation_btn2_enable.png" />
+    <None Include="Resources\size_rotation_btn1_enable.png" />
+    <None Include="Resources\size_rotation_btn2_select.png" />
+    <None Include="Resources\size_btn_thumbnail_enable.png" />
+    <None Include="Resources\size_btn_thumbnail_select.png" />
+    <None Include="Resources\size_btn_point_enable.png" />
+    <None Include="Resources\size_btn_point_select.png" />
+    <None Include="Resources\size_scroll_bar.png" />
+    <None Include="Resources\size_controll_bg_1.png" />
+    <None Include="Resources\size_controll_bg_2.png" />
+    <None Include="Resources\size_controll_bg_21.png" />
+    <None Include="Resources\size_scroll_bg_t.png" />
+    <None Include="Resources\size_scroll_bg_b.png" />
+    <None Include="Resources\size_scroll_bar1.png" />
+    <None Include="Resources\btn_rocation_enable.png" />
+    <None Include="Resources\btn_name_enable.png" />
+    <None Include="Resources\btn_name_select.png" />
+    <None Include="Resources\set_tab_select_l.png" />
+    <None Include="Resources\set_tab_enable_l.png" />
+    <None Include="Resources\set_tab_select_r.png" />
+    <None Include="Resources\set_tab_enable_r.png" />
+    <None Include="Resources\btn_wid_68_enable.png" />
+    <None Include="Resources\btn_wid_68_select.png" />
+    <None Include="Resources\btn_control_plus_enable.png" />
+    <None Include="Resources\btn_control_plus_select.png" />
+    <None Include="Resources\btn_drop_enable.png" />
+    <None Include="Resources\btn_drop_click.png" />
+    <None Include="Resources\btn_wid_118_enable.png" />
+    <None Include="Resources\btn_wid_118_select.png" />
+    <None Include="Resources\btn_wid_68_enable1.png" />
+    <None Include="Resources\btn_wid_68_select1.png" />
+    <None Include="Resources\bg_control_top3.png" />
+    <None Include="Resources\btn_drop_c_enable.png" />
+    <None Include="Resources\bg_control_top4.png" />
+    <None Include="Resources\bg_control_top5.png" />
+    <None Include="Resources\btn_wid_68_enable2.png" />
+    <None Include="Resources\popup_mtools_bg.png" />
+    <None Include="Resources\mtools_btn1_enable.png" />
+    <None Include="Resources\mtools_btn2_enable.png" />
+    <None Include="Resources\mtools_btn6_enable.png" />
+    <None Include="Resources\mtools_btn7_enable.png" />
+    <None Include="Resources\mtools_btn8_enable.png" />
+    <None Include="Resources\mtools_btn9_enable.png" />
+    <None Include="Resources\mtools_btn3_enable.png" />
+    <None Include="Resources\mtools_btn5_enable.png" />
+    <None Include="Resources\mtools_btn11_enable.png" />
+    <None Include="Resources\mtools_btn4_enable.png" />
+    <None Include="Resources\mtools_btn10_enable.png" />
+    <None Include="Resources\mtools_btn14_enable.png" />
+    <None Include="Resources\mtools_btn13_enable.png" />
+    <None Include="Resources\mtools_btn14_enable1.png" />
+    <None Include="Resources\mtools_btn15_enable.png" />
+    <None Include="Resources\mtools_btn16_enable.png" />
+    <None Include="Resources\mtools_btn16_select.png" />
+    <None Include="Resources\popup_history_title.png" />
+    <None Include="Resources\mtools_btn4_enable1.png" />
+    <None Include="Resources\status_off.png" />
+    <None Include="Resources\status_on.png" />
+    <None Include="Resources\btn_wid_76_enable.png" />
+    <None Include="Resources\btn_wid_76_select.png" />
+    <None Include="Resources\btn_scanmode_bg.png" />
+    <None Include="Resources\btn_drop_enable1.png" />
+    <None Include="Resources\btn_drop_select.png" />
+    <None Include="Resources\btn_control_minus_enable.png" />
+    <None Include="Resources\btn_control_minus_select.png" />
+    <None Include="Resources\btn_control_off_enable.png" />
+    <None Include="Resources\btn_control_off_select.png" />
+    <None Include="Resources\popup_option_bg.png" />
+    <None Include="Resources\popup_bubble_close_e.png" />
+    <None Include="Resources\popup_close_s.png" />
+    <None Include="Resources\btn_drop1_disable.png" />
+    <None Include="Resources\btn_drop1_click1.png" />
+    <None Include="Resources\btn_drop1_over.png" />
+    <None Include="Resources\size_controll_bg_11.png" />
+    <None Include="Resources\size_thumbnail_bg.png" />
+    <None Include="Resources\ingo_edit_enable.png" />
+    <None Include="Resources\ingo_edit_select.png" />
+    <None Include="Resources\size_rotation_btn1_enable1.png" />
+    <None Include="Resources\size_rotation_btn1_select1.png" />
+    <None Include="Resources\info_graph.png" />
+    <None Include="Resources\popup_status_bg.png" />
+    <None Include="Resources\popup_checkbox.png" />
+    <None Include="Resources\popup_check_sel.png" />
+    <None Include="Resources\btn_color_enable.png" />
+    <None Include="Resources\btn_color_enable1.png" />
+    <None Include="Resources\btn_color_enable2.png" />
+    <None Include="Resources\title_bg.png" />
+    <None Include="Resources\title_btn_window2_2_enable.png" />
+    <None Include="Resources\splash_bg.png" />
+    <None Include="Resources\popup_sample_bg.png" />
+    <None Include="Resources\btn_progress_bg_2.png" />
+    <None Include="Resources\btn_minus_enable1.png" />
+    <None Include="Resources\btn_plus_enable2.png" />
+    <None Include="Resources\btn_progress_dot1.png" />
+    <None Include="Resources\btn_progress_bar_info_2.png" />
+    <None Include="Resources\btn_minus_enable2.png" />
+    <None Include="Resources\btn_progress_bg_21.png" />
+    <None Include="Resources\btn_progress_bg_22.png" />
+    <None Include="Resources\btn_plus_enable3.png" />
+    <None Include="Resources\btn_minus_enable3.png" />
+    <None Include="Resources\popup_record_bg.png" />
+    <None Include="Resources\btn_name_drop2_m_enable.png" />
+    <None Include="Resources\btn_record_enable.png" />
+    <None Include="Resources\btn_record_select.png" />
+    <None Include="Resources\icon_rec_dot.png" />
+    <None Include="Resources\popup_map_t_bg.png" />
+    <None Include="Resources\popup_map_box.png" />
+    <None Include="Resources\popup_map_btn_enable.png" />
+    <None Include="Resources\popup_map_input.png" />
+    <None Include="Resources\popup_map_up_enable.png" />
+    <None Include="Resources\logo2.png" />
+    <None Include="Resources\size_thumbnail_bg1.png" />
+    <None Include="Resources\size_controll_bg_12.png" />
+    <None Include="Resources\size_controll_bg_22.png" />
+    <None Include="Resources\size_controll_bg_13.png" />
+    <None Include="Resources\popup_status_bg1.png" />
+    <None Include="Resources\status_off1.png" />
+    <None Include="Resources\popup_btn_nor_enable.png" />
+    <None Include="Resources\status_on1.png" />
+    <None Include="Resources\btn_controll_big_enable1.png" />
+    <None Include="Resources\btn_controll_small_enable_1.png" />
+    <None Include="Resources\btn_controll_small_enable_2.png" />
+    <None Include="Resources\btn_controll_big_click_l.png" />
+    <None Include="Resources\btn_controll_big_click_l1.png" />
+    <None Include="Resources\btn_controll_small_enable_3.png" />
+    <None Include="Resources\btn_controll_small_enable_4.png" />
+    <None Include="Resources\btn_controll_big_over_l.png" />
+    <None Include="Resources\btn_controll_small_over_1.png" />
+    <None Include="Resources\btn_controll_big_select_l.png" />
+    <None Include="Resources\btn_capture_disable.png" />
+    <None Include="Resources\btn_controll_big_over_r.png" />
+    <None Include="Resources\btn_controll_big_select_r.png" />
+    <None Include="Resources\btn_controll_small_select_1.png" />
+    <None Include="Resources\btn_controll_big_over_l_1.png" />
+    <None Include="Resources\btn_controll_big_select_l_1.png" />
+    <None Include="Resources\btn_controll_big_over_r_1.png" />
+    <None Include="Resources\btn_controll_big_select_r_1.png" />
+    <None Include="Resources\btn_controll_big_enable_l.png" />
+    <None Include="Resources\btn_controll_big_enable_l_1.png" />
+    <None Include="Resources\btn_controll_big_enable_l_11.png" />
+    <None Include="Resources\btn_controll_big_enable_l_12.png" />
+    <None Include="Resources\btn_controll_big_enable_r_1.png" />
+    <None Include="Resources\btn_controll_small_enable_5.png" />
+    <None Include="Resources\btn_controll_big_enable_l_13.png" />
+    <None Include="Resources\btn_controll_big_disable_l.png" />
+    <None Include="Resources\btn_controll_big_disable_l1.png" />
+    <None Include="Resources\btn_controll_big_select_l1.png" />
+    <None Include="Resources\btn_controll_big_disable_r.png" />
+    <None Include="Resources\btn_controll_big_select_r1.png" />
+    <None Include="Resources\splash_bg1.png" />
+    <None Include="Resources\btn_progress_bg_23.png" />
+    <None Include="Resources\title_btn_window2_2_select.png" />
+    <None Include="Resources\control_loading_12.png" />
+    <None Include="Resources\control_loading_13.png" />
+    <None Include="Resources\control_loading_14.png" />
+    <None Include="Resources\control_top_select.png" />
+    <None Include="Resources\popup_map_btn_enable1.png" />
+    <None Include="Resources\popup_map_btn_select.png" />
+    <None Include="Resources\control_top_select1.png" />
+    <None Include="Resources\bg_logo.png" />
+    <None Include="Resources\logo3.png" />
+    <None Include="Resources\logo4.png" />
+    <None Include="Resources\splash_bg11.png" />
+    <None Include="Resources\btn_toggle2_over_l.png" />
+    <None Include="Resources\btn_toggle2_select_l1.png" />
+    <None Include="Resources\splash_bg2.png" />
+    <None Include="Resources\Calibration_disable.png" />
+    <None Include="Resources\Calibration_enable.png" />
+    <None Include="Resources\Calibration_enable1.png" />
+    <None Include="Resources\Camera_CrossPoint.png" />
+    <None Include="Resources\그림12.png" />
+    <None Include="Resources\CameraBackground.jpg" />
+    <None Include="Resources\bg_control_middle1.png" />
+    <None Include="Resources\Info_graph2.png" />
+    <None Include="Resources\senseicon.ico" />
+    <None Include="Resources\icon01-12.png" />
+    <None Include="Resources\icon01-11.png" />
+    <None Include="Resources\icon01-121.png" />
+    <None Include="Resources\icon02-01.png" />
+    <None Include="Resources\icon02-02.png" />
+    <None Include="Resources\icon01-13.png" />
+    <None Include="Resources\icon01-14.png" />
+    <None Include="Resources\icon01-15.png" />
+    <None Include="Resources\icon01-16.png" />
+    <None Include="Resources\icon01-17.png" />
+    <None Include="Resources\icon01-18.png" />
+    <None Include="Resources\icon01-19.png" />
+    <None Include="Resources\icon01-20.png" />
+    <None Include="Resources\icon01-21.png" />
+    <None Include="Resources\icon01-22.png" />
+    <None Include="Resources\icon01-23.png" />
+    <None Include="Resources\icon01-24.png" />
+    <None Include="Resources\icon01-25.png" />
+    <None Include="Resources\icon01-26.png" />
+    <None Include="Resources\icon01-27.png" />
+    <None Include="Resources\icon01-29.png" />
+    <None Include="Resources\icon01-31.png" />
+    <None Include="Resources\icon01-33.png" />
+    <None Include="Resources\icon01-35.png" />
+    <None Include="Resources\icon01-28.png" />
+    <None Include="Resources\icon01-30.png" />
+    <None Include="Resources\icon01-32.png" />
+    <None Include="Resources\icon01-34.png" />
+    <None Include="Resources\icon01-36.png" />
+    <None Include="Resources\icon01-37.png" />
+    <None Include="Resources\icon01-38.png" />
+    <None Include="Resources\icon01-39.png" />
+    <None Include="Resources\icon01-40.png" />
+    <None Include="Resources\icon01-41.png" />
+    <None Include="Resources\icon01-42.png" />
+    <None Include="Resources\icon01-43.png" />
+    <None Include="Resources\icon01-44.png" />
+    <None Include="Resources\icon01-45.png" />
+    <None Include="Resources\icon01-46.png" />
+    <None Include="Resources\icon01-47.png" />
+    <None Include="Resources\icon01-48.png" />
+    <None Include="Resources\icon01-49.png" />
+    <None Include="Resources\icon01-50.png" />
+    <None Include="Resources\icon01-51.png" />
+    <None Include="Resources\icon01-52.png" />
+    <None Include="Resources\icon01-53.png" />
+    <None Include="Resources\icon01-54.png" />
+    <None Include="Resources\icon01-55.png" />
+    <None Include="Resources\icon01-56.png" />
+    <None Include="Resources\icon01-71.png" />
+    <None Include="Resources\icon01-72.png" />
+    <None Include="Resources\icon01-69.png" />
+    <None Include="Resources\icon01-70.png" />
+    <None Include="Resources\icon01-73.png" />
+    <None Include="Resources\icon01-74.png" />
+    <None Include="Resources\icon01-83.png" />
+    <None Include="Resources\icon01-84.png" />
+    <None Include="Resources\icon01-81.png" />
+    <None Include="Resources\icon01-82.png" />
+    <None Include="Resources\icon01-57.png" />
+    <None Include="Resources\icon01-58.png" />
+    <None Include="Resources\icon01-59.png" />
+    <None Include="Resources\icon01-60.png" />
+    <None Include="Resources\icon01-61.png" />
+    <None Include="Resources\icon01-62.png" />
+    <None Include="Resources\icon01-63.png" />
+    <None Include="Resources\icon01-64.png" />
+    <None Include="Resources\icon01-65.png" />
+    <None Include="Resources\icon01-66.png" />
+    <None Include="Resources\icon01-67.png" />
+    <None Include="Resources\icon01-68.png" />
+    <None Include="Resources\icon02-08.png" />
+    <None Include="Resources\icon02-08-C.png" />
+    <None Include="Resources\icon02-05-d.png" />
+    <None Include="Resources\icon02-06.png" />
+    <None Include="Resources\icon02-06-1.png" />
+    <None Include="Resources\icon02-06-11.png" />
+    <None Include="Resources\icon02-081.png" />
+    <None Include="Resources\icon02-08-p.png" />
+    <None Include="Resources\icon02-08-p-1.png" />
+    <None Include="Resources\icon02-08-p-11.png" />
+    <None Include="Resources\icon02-08-p-12.png" />
+    <None Include="Resources\icon02-08-m-1.png" />
+    <None Include="Resources\info_graph3.png" />
+    <None Include="Resources\icon02-09.png" />
+    <None Include="Resources\icon02-10.png" />
+    <None Include="Resources\icon02-091.png" />
+    <None Include="Resources\icon02-101.png" />
+    <None Include="Resources\icon02-09-1.png" />
+    <None Include="Resources\icon02-09-11.png" />
+    <None Include="Resources\icon04-01.png" />
+    <None Include="Resources\icon04-02.png" />
+    <None Include="Resources\icon04-03.png" />
+    <None Include="Resources\icon04-04.png" />
+    <None Include="Resources\icon04-05.png" />
+    <None Include="Resources\icon04-06.png" />
+    <None Include="Resources\icon04-07.png" />
+    <None Include="Resources\icon04-08.png" />
+    <None Include="Resources\icon01-75.png" />
+    <None Include="Resources\icon01-76.png" />
+    <None Include="Resources\icon01-77.png" />
+    <None Include="Resources\icon01-78.png" />
+    <None Include="Resources\icon01-79.png" />
+    <None Include="Resources\icon01-80.png" />
+    <None Include="Resources\icon01-75-1.png" />
+    <None Include="Resources\icon01-77-1.png" />
+    <None Include="Resources\icon01-79-1.png" />
+    <None Include="Resources\icon01-75-11.png" />
+    <None Include="Resources\icon01-77-11.png" />
+    <None Include="Resources\icon01-79-11.png" />
+    <None Include="Resources\icon01-76-1.png" />
+    <None Include="Resources\icon01-78-1.png" />
+    <None Include="Resources\icon01-80-1.png" />
+    <None Include="Resources\透明logo新.jpg" />
+    <None Include="Resources\white logo.png" />
+    <None Include="Resources\icon05-01-01.png" />
+    <Content Include="senseicon.ico" />
+    <Content Include="TextData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\ApertualAlign.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\FilamentExchange.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\FilamentSaturation.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\Gunalign.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\StigAlign.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\wizardFilamnet.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\wizardFilamnetOff.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\wizardFrontpanel.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\wizardGun.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Wizard\wizardGunAlign.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\UIsetBinder.datasource" />
+    <None Include="Resources\generic_picture.png" />
+    <None Include="Resources\Printer.png" />
+    <None Include="Resources\HardDrive.png" />
+    <None Include="Resources\ToolMeasure_24x24.PNG" />
+    <None Include="Resources\ToolCrosshair_24x24.PNG" />
+    <None Include="Resources\Align.png" />
+    <None Include="Resources\ToolStartup_24x24.PNG" />
+    <None Include="Resources\Image-MeasureTools\Text.ico" />
+    <None Include="Resources\Image-MeasureTools\Arrow.ico" />
+    <None Include="Resources\Image-MeasureTools\Area.ico" />
+    <None Include="Resources\Image-MeasureTools\Rectangle.ico" />
+    <None Include="Resources\Image-MeasureTools\Ellipse.ico" />
+    <None Include="Resources\Image-MeasureTools\Length.ico" />
+    <None Include="Resources\RightFrame.png" />
+    <None Include="Resources\MainFrame_BackColor.png" />
+    <None Include="Resources\Marquois.ico" />
+    <None Include="Resources\TextonIcon.png" />
+    <None Include="Properties\DataSources\SystemInfoBinder.datasource" />
+    <None Include="Resources\MainFrame_SEMTRAC.png" />
+    <None Include="Resources\SEMTRAC_530x333_Square.png" />
+    <None Include="Resources\RightTriangle.png" />
+    <None Include="Resources\LeftTriangle.png" />
+    <None Include="app.config" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\AIOsem\SettingData.xsc">
+      <DependentUpon>SettingData.xsd</DependentUpon>
+    </None>
+    <None Include="Settings\AIOsem\SettingData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SettingData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\AIOsem\SettingData.xss">
+      <DependentUpon>SettingData.xsd</DependentUpon>
+    </None>
+    <None Include="Settings\MiniSEM\MicroscopeProfile.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MicroscopeProfile.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\MiniSEM\ScanningProfile.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ScanningProfile.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\SlowPhoto.png" />
+    <None Include="Resources\SlowScan.png" />
+    <None Include="Resources\FastPhoto.png" />
+    <None Include="Resources\FastScan.png" />
+    <None Include="Resources\ScanPause.png" />
+    <None Include="Resources\MainFrame.png" />
+    <None Include="Resources\MagnificationPanel.png" />
+    <None Include="Resources\MagnificationLeft.png" />
+    <None Include="Resources\MagnificationRight.png" />
+    <None Include="Resources\RotationPanel.png" />
+    <None Include="Resources\RotationLeft.png" />
+    <None Include="Resources\RotationRight.png" />
+    <None Include="Resources\PushRoundButton.png" />
+    <None Include="Resources\PushToolButton.png" />
+    <None Include="Resources\PushRoundButtonLeft.png" />
+    <None Include="Resources\PushRoundButtonRight.png" />
+    <None Include="Resources\VideoPanel.png" />
+    <None Include="Resources\VideoButton.png" />
+    <None Include="Resources\Minus.ico" />
+    <None Include="Resources\Plus.ico" />
+    <None Include="Resources\LampToolButton.png" />
+    <None Include="Resources\NoiseButtonLeft.png" />
+    <None Include="Resources\NoiseButtonRight.png" />
+    <None Include="Resources\ScanModeFastPhoto.ico" />
+    <None Include="Resources\ScanModeSlowScan.ico" />
+    <None Include="Resources\ScanModeFastScan.ico" />
+    <None Include="Resources\ScanModeScanPause.ico" />
+    <None Include="Resources\ScanModeSlowPhoto.ico" />
+    <None Include="Resources\ToolMagnificationLeft.png" />
+    <None Include="Resources\ToolMagnificationRight.png" />
+    <None Include="Resources\ToolRotateLeft.png" />
+    <None Include="Resources\ToolRotateRight.png" />
+    <None Include="Resources\error.ico" />
+    <None Include="Resources\Focus.cur" />
+    <None Include="Resources\FrontPanelBackground.png" />
+    <None Include="Resources\VideoButtonSmall.png" />
+    <None Include="Resources\ScrollPanel.png" />
+    <None Include="Resources\PushToolButtonSmall.png" />
+    <None Include="Resources\ScrollPanelShort.png" />
+    <None Include="Resources\error_Delete.ico" />
+    <None Include="Settings\SNE4000M\SettingData.xsc">
+      <DependentUpon>SettingData.xsd</DependentUpon>
+    </None>
+    <None Include="Settings\SNE4000M\SettingData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SettingData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\SNE4000M\SettingData.xss">
+      <DependentUpon>SettingData.xsd</DependentUpon>
+    </None>
+    <Content Include="TextSchema.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0%28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0%28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="FormScanSetup.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\14 - Default Document.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\34 - 3.5 floppy.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Camera.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\CAPTURE.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\CROSS.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\CROSS1.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\CROSS2.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\FOCUS.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\FOCUS1.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\HV.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-MeasureTools\Arrow.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-MeasureTools\IS2000-주화면.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-MeasureTools\Linear.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-MeasureTools\Linear.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-MeasureTools\Measure.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-MeasureTools\Save-Dialog.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-MeasureTools\Text.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-RotateView\Scan-Fast.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-RotateView\ScanDual.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-RotateView\ScanFast.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-RotateView\ScanPause.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-RotateView\ScanPhoto1.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-RotateView\ScanPhoto2.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-RotateView\ScanSlow.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-SubPanel\Minus.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Image-SubPanel\Plus.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\MINUS.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\MOUSE.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\OPEN.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\PLUS.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\RAIDAR.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\red5.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\red6.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\SAVE.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Scan5.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ScanFull.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\SCREEN.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\SEC Logo.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\seceng_top7.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\STIG.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ToolbarBG.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\WEATHER5.ICO">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="ko\MeasureTools.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ko\NanoeyeSEM.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="NationalInstruments.Common.Native">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="배율 설정 순서.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SoftwareModule\GenericSupport\GenericSupport\GenericSupport.csproj">
+      <Project>{A8720C85-F6CF-4834-8386-0C3152205658}</Project>
+      <Name>GenericSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SoftwareModule\GUIbyLoen\GUIelement\GUIelement.csproj">
+      <Project>{56A1D235-F865-4A41-8E7B-10D802AFD6F1}</Project>
+      <Name>GUIelement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SoftwareModule\NanoeyeSupport\NanoeyeSupport.csproj">
+      <Project>{0322E4B6-7D52-4C15-AD1B-C29B73BC0989}</Project>
+      <Name>NanoeyeSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SoftwareModule\Nanoeye\Nanoeye\Nanoeye.csproj">
+      <Project>{E48F9279-8C65-48C1-9795-8A14234A8562}</Project>
+      <Name>Nanoeye</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
