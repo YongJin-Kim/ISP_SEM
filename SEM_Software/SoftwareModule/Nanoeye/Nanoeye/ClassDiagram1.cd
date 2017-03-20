@@ -1,0 +1,956 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SEC.Nanoeye.NanoColumn.ColumnBool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACKABBCAAAAAgAAAAEAAAAEAAAAgCAAAQQg=</HashCode>
+      <FileName>NanoColumn\ColumnBool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.ColumnDouble" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAACAAACAAAAAQAAAAAAAAAAAAAIgAAAAAAA=</HashCode>
+      <FileName>NanoColumn\ColumnDouble.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.ColumnDoubleRotation" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAIAAAAAKAAACAAAAAAIAAAAAACAAAQAIgAAAARAA=</HashCode>
+      <FileName>NanoColumn\ColumnDoubleRotation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.ColumnInt" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAACAAACAAAAAQAAAAAAAAAgAAAIgAAAAAAA=</HashCode>
+      <FileName>NanoColumn\ColumnInt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.ColumnValueBase&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAEAAIAhAEAAAAAgAAgAwABAAQAAAJICgAAUQg=</HashCode>
+      <FileName>NanoColumn\ColumnValueBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Helper" Collapsed="true">
+    <Position X="6.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoColumn\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Sem4000M" Collapsed="true">
+    <Position X="13.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQhpDhIgUAQYCkABEzpoFQAEEIATA8QDs+QhRAHQ=</HashCode>
+      <FileName>NanoColumn\Sem4000M.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.SEMbase" Collapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAQAAAAAAgAAAAAAAkAAEAAAAgAAQAEA=</HashCode>
+      <FileName>NanoColumn\SEMbase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.SemMiniSEM" Collapsed="true">
+    <Position X="16" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUhoDjIgUAQYCkABETpoFQAEEIADA8QDo+QhRAHQ=</HashCode>
+      <FileName>NanoColumn\SemMiniSEM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.SemNormalSEM" Collapsed="true">
+    <Position X="16" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACAAgAAAABQBAAAAgCIBAgAAAAAAEABAAgAAAAA=</HashCode>
+      <FileName>NanoColumn\SemNormalSEM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Lens.WDSplineObjBase" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAIADCBwCCKIIAAgMRgAIAAAFAASAAAAICAQgA=</HashCode>
+      <FileName>NanoColumn\Lens\WDSplineObjBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Lens.WDtableSplineWDBase" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAQAIDCBAACKCEAAQIBgAMAACBAAYIAEAgAAwgA=</HashCode>
+      <FileName>NanoColumn\Lens\WDtableSplineWDBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Scan.Magnification_Nanoeye001" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAAAAAEIAAAABBAAAIAIAAAAAAAAAgAAAAQAA=</HashCode>
+      <FileName>NanoColumn\Scan\Magnification_Nanoeye001.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Scan.MagTableBase" Collapsed="true">
+    <Position X="8.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAWAACCAACSICAAAQQBAgYAACBAAIIAEgAAAUAA=</HashCode>
+      <FileName>NanoColumn\Scan\MagTableBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Scan.MagTableSpline" Collapsed="true">
+    <Position X="10" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYEAAWAICCAAASIKEAAwQBAwIAACBgAMIAEAgAhUBA=</HashCode>
+      <FileName>NanoColumn\Scan\MagTableSpline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Vacuum.Pirani_NormalSEM_WSA" Collapsed="true">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAIAAAAAAAAAAAAgAgAAAAAAAAIAAAAAAQA=</HashCode>
+      <FileName>NanoColumn\Vacuum\Pirani_NormalSEM_WSA.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Vacuum.VacuumMode_Nanoeye001" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>NanoColumn\Vacuum\VacuumMode_Nanoeye001.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Vacuum.VacuumState_Carryer" Collapsed="true">
+    <Position X="13.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAKAAACAAAAAQAAgAAAAAAAAAAIgAAAAAUA=</HashCode>
+      <FileName>NanoColumn\Vacuum\VacuumState_Carryer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Vacuum.VacuumState_MiniSEM" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAIAAAGAAAAAAAAAAAAAAAgAAAAAAAAAAQA=</HashCode>
+      <FileName>NanoColumn\Vacuum\VacuumState_MiniSEM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Vacuum.VacuumState_Nanoeye001" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>NanoColumn\Vacuum\VacuumState_Nanoeye001.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoColumn.Vacuum.VacuumState_NormalSEM001" Collapsed="true">
+    <Position X="16" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAKAAACAAAAAQAAgAAAAAAAAAAIgAAAAAUA=</HashCode>
+      <FileName>NanoColumn\Vacuum\VacuumState_NormalSEM001.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeDevice.MiniSEM" Collapsed="true">
+    <Position X="7" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoeyeDevice\MiniSEM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeDevice.NormalSEM" Collapsed="true">
+    <Position X="2.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoeyeDevice\NormalSEM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeDevice.SNE4000M" Collapsed="true">
+    <Position X="4.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoeyeDevice\SNE4000M.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoeyeFactory" Collapsed="true">
+    <Position X="4.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAABQAAAAAAAAAAAEAQAAAAAACAAAgAAAAAAAA=</HashCode>
+      <FileName>NanoeyeFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.ActiveScan" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIwAAAgAACRQBQkgEAAAUIQAAAAAEAAE5AgUAAAAEAQ=</HashCode>
+      <FileName>NanoImage\ActiveScan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.217" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.ScanGenerator" Collapsed="true">
+    <Position X="35.25" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBBAAAAAAQAAAAgAYgQCAAAAAAAgACAAAAIAAEAwAAA=</HashCode>
+      <FileName>NanoImage\Generator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.ScanModifier" Collapsed="true">
+    <Position X="35.25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>NanoImage\ScanModifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.SettingScanner" Collapsed="true">
+    <Position X="35.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIKIYmASAATnwEABAQIaRGQCAAQjwAFEKAAAAIpjw=</HashCode>
+      <FileName>NanoImage\SettingScanner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.VirtualDAQ" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAAAAAAGhQJAEiAAAAGDAggFAACCBQsQMEADAAAAA=</HashCode>
+      <FileName>NanoImage\DataAcquation\VirtualDAQ.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.IODA.Information" Collapsed="true">
+    <Position X="26.75" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9wAykAAkAGIABBIAARKEIAIHBAAAJCAhQiCHKRAIILA=</HashCode>
+      <FileName>NanoImage\DataAcquation\IODA\Information.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.IODA.IODAUsb" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQBBAChQJAMkAACEGCJoCAAABAAAIQAAAwAQCMA=</HashCode>
+      <FileName>NanoImage\DataAcquation\IODA\IODAUsb.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.IODA.SSioda" Collapsed="true">
+    <Position X="35.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAQAAAAAAAAACAACAACAgAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>NanoImage\DataAcquation\IODA\IODAUsb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.IODA.IODAUSB_API" Collapsed="true">
+    <Position X="26.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAACwaVooCEBbzvWAyCACRgKlFOQIKrgIHVDPuCYRkA=</HashCode>
+      <FileName>NanoImage\DataAcquation\IODA\IODAUSB_API.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.IODA.IODAException" Collapsed="true">
+    <Position X="26.75" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoImage\DataAcquation\IODA\IODAUSB_API.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.NIDaq.Information" Collapsed="true">
+    <Position X="24.75" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAABCAIAACAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>NanoImage\DataAcquation\NIDaq\Information.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.NIDaq.NIDaq6251" Collapsed="true">
+    <Position X="24.75" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAABAChQJAEkAAQAGCAggCEAAAgAIQAAAQIQCEA=</HashCode>
+      <FileName>NanoImage\DataAcquation\NIDaq\NIDaq6251.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.DataAcquation.NIDaq.NIDaq6351" Collapsed="true">
+    <Position X="24.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>NanoImage\DataAcquation\NIDaq\NIDaq6351.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.ScanItem.SI_SC_LA_Blur" Collapsed="true">
+    <Position X="30.75" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEoACEACQAAIE0AAgEApQAAAEgQAwApCADiABKCAQ=</HashCode>
+      <FileName>NanoImage\ScanItem\SI_SC_LA_Blur.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoImage.ScanItem.SI_SC_LA_Median" Collapsed="true">
+    <Position X="30.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoImage\ScanItem\SI_SC_LA_Median.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.AxisDC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAwCgAAGGACgCiIAAkAAAJAAAgCAAAIEAAABAARAA=</HashCode>
+      <FileName>NanoStage\DCValues\AxisDC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.StageDC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAFQAAAMoACwAAAEAAgiIAAAAAhYAEAAAAEAEAAJE=</HashCode>
+      <FileName>NanoStage\DCValues\StageDC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.HomeSearch" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQgAABQAADAAAwEAQAAIICCABYJABAEBIRAAgAAAABE=</HashCode>
+      <FileName>NanoStage\HomeSearch.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.Initialize" Collapsed="true">
+    <Position X="15" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.ErrorControl" Collapsed="true">
+    <Position X="6.25" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAACAAAAAAQAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.OneAxisMoveTrapezoid" Collapsed="true">
+    <Position X="16.75" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAQAAAAAACAQAAAAAQAAAAAAAIAAAgBAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.OneAxisMoveScurve" Collapsed="true">
+    <Position X="15" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAAAAAAAAAAAAAAAAAAAAAAAAAAEAQICgAAAAQAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.MultiAxesMove" Collapsed="true">
+    <Position X="13.25" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAICAAAAAAAQQAhAAAQACAAAAAAIAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.VelocityMove" Collapsed="true">
+    <Position X="11.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.MapAxes" Collapsed="true">
+    <Position X="15" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.CoordinatedActionSet" Collapsed="true">
+    <Position X="8" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.MulitAxesStraightMove" Collapsed="true">
+    <Position X="11.5" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAADAAwAAAAAAAAAAAAIAAAAAAAAAACYAAAA8AAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.ArcMove" Collapsed="true">
+    <Position X="11.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAAAAAAAAAABAAABAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.SplineMove" Collapsed="true">
+    <Position X="11.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgIQBgAEAggAAEQBwEAAAAAIAAhIAANAAAAACAWA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.StopAction" Collapsed="true">
+    <Position X="6.25" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAIAAAgAAIAgAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.StopEmergenceAction" Collapsed="true">
+    <Position X="8" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.PositionValue" Collapsed="true">
+    <Position X="11.5" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAACAAAAAAAAAAABAAAAAAAAAAgAIAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.PositionIO" Collapsed="true">
+    <Position X="9.75" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.ActionState" Collapsed="true">
+    <Position X="13.25" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAJAAAAAABIAAAAEAABAAEAgAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.ControlState" Collapsed="true">
+    <Position X="6.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAQIAAAAAKAAEAAEAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.SensorState" Collapsed="true">
+    <Position X="15" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAAAAAAAAAE=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.AnalogIO" Collapsed="true">
+    <Position X="9.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAAAAAEAQAAgAAgAABACAEAAAAAAAAAAAAAAgAgA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.MotionControl" Collapsed="true">
+    <Position X="9.75" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAQAAAAAQAAAAAAAAAAAQAAQAAAAAAAAAAABAQ=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.MMCConfig" Collapsed="true">
+    <Position X="6.25" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQAAAAAAAAAAAAAAAAQgCAAAAgAAAAAAhIIAQA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.AxisConfig" Collapsed="true">
+    <Position X="13.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lBAIgBAAkEExkQEQGUAQBABAAEgAUsgAAQAUQQpACAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.PulseRatio" Collapsed="true">
+    <Position X="13.25" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAgAAAAAAAAAAAAAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.GainSetup" Collapsed="true">
+    <Position X="11.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YACABIAECABAAAgAEAAEwAAAKAACQAgAgAAAAAQAAAM=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.LimitsOfSotware" Collapsed="true">
+    <Position X="13.25" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAAEAAAAACAAAABAAgAIDAgkokAgCmAIoAIAIAIE=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.LimitsOfHardware" Collapsed="true">
+    <Position X="11.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAwABAEAAQAgAIDACJgYwBQAAAACAABAAIgAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.AmpControl" Collapsed="true">
+    <Position X="6.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DIAAAAACCAQAAAAAAYAAACBAAAAAAAIACAAUAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.AmpFault" Collapsed="true">
+    <Position X="8" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQBAAAKAAACAABAEAACAAAAgAIgIQAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.IOInterruptSetup" Collapsed="true">
+    <Position X="6.25" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQAAAgAAAACAAAEBQAAAAAAAAAAAAAAAEAAAACAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.IOPort" Collapsed="true">
+    <Position X="8" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAEAABAIAEAAAAAAAAAABAAAAAQAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.ElectricGearRatio" Collapsed="true">
+    <Position X="11.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAAAAgAEA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.SyncContorl" Collapsed="true">
+    <Position X="9.75" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAIAAAgAAAAQAQAAEAAAACAACIAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.PositionCompensation" Collapsed="true">
+    <Position X="8" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.InterpolationControl" Collapsed="true">
+    <Position X="16.75" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.Latch" Collapsed="true">
+    <Position X="9.75" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAABAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.EncoderABS" Collapsed="true">
+    <Position X="13.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAEAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.CollisionPrevent" Collapsed="true">
+    <Position X="16.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAACAAAYAAAAAAACAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.EndlessMove" Collapsed="true">
+    <Position X="15" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACBACAAAAABAAAgEAAQAAAAgAAAAAAAAAggAAIAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.Filter" Collapsed="true">
+    <Position X="9.75" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAsAgAAAAAAAAAICAAEcAAAAAAAkAAAIEAAAAAQ=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.PositionCompareAndCapture" Collapsed="true">
+    <Position X="6.25" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAEAAAAAAAAAAAAAEAAAAAAAAAAAACAACAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.ETC" Collapsed="true">
+    <Position X="8" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEGAQBAQaQSIAgIACAkACMBAAQRwgDAwk4E4AAAYgQk=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAPICollection.Enumurations" Collapsed="true">
+    <Position X="16.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAPICollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCAxis" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEBgCCAgWHACgCyJgCkiAAJAAAoKACgoAAgABAARAQ=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCAxis.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCPosition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQIKCCACCiCQICECAAIqCTgAFAIAUVAAAIgAQAA0EE=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCPosition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.MMCValues.MMCStage" Collapsed="true">
+    <Position X="2" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQIAAGiAAAAgAAAAAgIAAQAADIAEAAAAAAAAABI=</HashCode>
+      <FileName>NanoStage\MMCValues\MMCStage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.SNE5000M.DebugHelper" Collapsed="true">
+    <Position X="9.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAACAAAAA=</HashCode>
+      <FileName>NanoStage\SNE5000M\DebugHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoStage.SNE5000M.Stage5000M" Collapsed="true">
+    <Position X="2" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAQIAAXAwAYBAhAAACECACgAAgCECIACBAAkAEAA=</HashCode>
+      <FileName>NanoStage\SNE5000M\Stage5000M.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoView.NanoViewErrorEventArgs" Collapsed="true">
+    <Position X="21.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAA=</HashCode>
+      <FileName>NanoView\EventArgsClasses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoView.NanoViewBase" Collapsed="true">
+    <Position X="15.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAAgACiQIAAEABAiCAAAAAAAAAgAEAgACACAAgA=</HashCode>
+      <FileName>NanoView\NanoViewBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoView.NanoViewMasterSlave" Collapsed="true">
+    <Position X="14.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAEAAAAAAOAAAEAAAACAAAIAAAQAAAgAAAAQAAA=</HashCode>
+      <FileName>NanoView\NanoViewMasterSlave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoView.NanoViewMultiMaster" Collapsed="true">
+    <Position X="16.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAAAABAAAAIAAEAgAAAAAAAAAAAAAAgAAQAQACA=</HashCode>
+      <FileName>NanoView\NanoViewMultiMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoView.PackeBase" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>NanoView\PacketBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoView.PacketFixed8Bytes" Collapsed="true">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAgAAQAAAACAAAAAAAEAAAAAAAAAACAAAABIAAI=</HashCode>
+      <FileName>NanoView\PacketFixed8Bytes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.NanoView.PacketVairable" Collapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>NanoView\PacketVairable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SEC.Nanoeye.NanoStage.SNE5000M.CollisionAreaType" Collapsed="true">
+    <Position X="6.25" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAKAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>NanoStage\SNE5000M\IStage5000M.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="SEC.Nanoeye.NanoColumn.I4000M" Collapsed="true">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQhpDhIgUAAQCkABExJoAAAEEIATA8QCs+QhBAHQ=</HashCode>
+      <FileName>NanoColumn\I4000M.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoColumn.IColumnValue" Collapsed="true">
+    <Position X="4.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>NanoColumn\IColumnValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoColumn.IDistanceCompensator" Collapsed="true">
+    <Position X="6.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAACBACAAAAAAAAAA=</HashCode>
+      <FileName>NanoColumn\IDistanceCompensator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoColumn.IMagCorrector" Collapsed="true">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoColumn\IMagCorrector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoColumn.IMiniSEM" Collapsed="true">
+    <Position X="4.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUhoDjIgUAAACkABERJoAAAEEIADA8QCo+QhBAHQ=</HashCode>
+      <FileName>NanoColumn\IMiniSEM.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoColumn.INormalSEM" Collapsed="true">
+    <Position X="7" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQjoDjIgUABQDkABExJoAAgEEIADA8QCo+QhBAHQ=</HashCode>
+      <FileName>NanoColumn\INormalSEM.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoColumn.ISEMController" Collapsed="true">
+    <Position X="7" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAgAAAAAA=</HashCode>
+      <FileName>NanoColumn\ISEMController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoColumn.Lens.IWDSplineObjBase" Collapsed="true">
+    <Position X="13.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAIAAAAAgAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>NanoColumn\IWDSplineObjBase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoImage.IActiveScan" Collapsed="true">
+    <Position X="33" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIwAAAAAAARQAQkgAAAAEAQAAAAAAAAEoAAAAAAAEAA=</HashCode>
+      <FileName>NanoImage\IActiveScan.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoImage.IScanItemEvent" Collapsed="true">
+    <Position X="30.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAApQAAAEAQAAAAAAAAABCAAA=</HashCode>
+      <FileName>NanoImage\IScanItemEvent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoImage.DataAcquation.IDAQ" Collapsed="true">
+    <Position X="24.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhQBAEgAAAAGCAAAAAAAAAAIQAAAAAAAAA=</HashCode>
+      <FileName>NanoImage\DataAcquation\iDAQ.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoImage.DataAcquation.IDaqData" Collapsed="true">
+    <Position X="24.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoImage\DataAcquation\iDAQ.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoImage.ScanItem.IScanItem" Collapsed="true">
+    <Position X="30.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAIEQAAAAAAAAAAAAAAAAAAAAiAAAAAA=</HashCode>
+      <FileName>NanoImage\ScanItem\IScanItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoStage.IAxis" Collapsed="true">
+    <Position X="6.25" Y="28.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAEEACgAiIAAkAAAJAAAgCAAAIAAAAAAABAA=</HashCode>
+      <FileName>NanoStage\IAxis.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoStage.IAxPosition" Collapsed="true">
+    <Position X="8" Y="28.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\IAxPosition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoStage.IStage" Collapsed="true">
+    <Position X="2" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQAAAEAAAAAAAAAAAAIAAAAABIAAAAAAAAAAABA=</HashCode>
+      <FileName>NanoStage\IStage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoStage.IStageCoare" Collapsed="true">
+    <Position X="2" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\IStage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoStage.SNE5000M.IStage5000M" Collapsed="true">
+    <Position X="4.25" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAABAgAAAAECAAAAAgCEAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\SNE5000M\IStage5000M.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoView.IMasterObjet" Collapsed="true">
+    <Position X="4.25" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoView\IMasterObjet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoView.INanoView" Collapsed="true">
+    <Position X="19.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAIAAAABAACAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>NanoView\INanoView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.Nanoeye.NanoView.INanoViewCore" Collapsed="true">
+    <Position X="19.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAgA=</HashCode>
+      <FileName>NanoView\INanoView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SEC.Nanoeye.NanoColumn.EnumIControlTableSetStyle" Collapsed="true">
+    <Position X="4.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAQAAAEQAAACAAQAAAAAAAAAAAAAg=</HashCode>
+      <FileName>NanoColumn\EnumIControlTableSetStyle.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoColumn.MiniSEM_DeviceType" Collapsed="true">
+    <Position X="11.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAABABAAAAAAAAgAAAAAAAAAAQAAEEAAAA=</HashCode>
+      <FileName>NanoColumn\MiniSEM_Devices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoColumn.MiniSEM_DeviceParser" Collapsed="true">
+    <Position X="6.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQACACAAAAA=</HashCode>
+      <FileName>NanoColumn\MiniSEM_Devices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoColumn.MiniSEM_Devices" Collapsed="true">
+    <Position X="8.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Blr4CABORgoIzTFAAgQzglDAzzTawBHwh4IuAMLgACU=</HashCode>
+      <FileName>NanoColumn\MiniSEM_Devices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoColumn.MiniSEM_DevicesFullName" Collapsed="true">
+    <Position X="10" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OuA08pKFTDxhLMotyNKBARpjwpl+xQinEDiIS6UoXrk=</HashCode>
+      <FileName>NanoColumn\MiniSEM_Devices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoStage.StageParser" Collapsed="true">
+    <Position X="11.5" Y="29.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAQAAACAAAAA=</HashCode>
+      <FileName>NanoStage\DCValues\StageDevices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoStage.StageChannel" Collapsed="true">
+    <Position X="8" Y="29.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAgGAAAAAAAgEAAAAAAAAAAAAAAAAAAACAAAEA=</HashCode>
+      <FileName>NanoStage\DCValues\StageDevices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoStage.StageInst" Collapsed="true">
+    <Position X="9.75" Y="29.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACAAAJCIAAIgAgAIAEQAAAAAAABAAAAAA=</HashCode>
+      <FileName>NanoStage\DCValues\StageDevices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoStage.StageType" Collapsed="true">
+    <Position X="13.25" Y="29.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAAAAAAgAAAAAACAAAAAAAAAwAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoStage\DCValues\StageDevices.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoStage.LimitSensorEnum" Collapsed="true">
+    <Position X="6.25" Y="29.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAgCBAAAAQAAAAACAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>NanoStage\Enumeration.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SEC.Nanoeye.NanoView.ErrorType" Collapsed="true">
+    <Position X="21.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAACCAEAAAAEIAAAAAAAA=</HashCode>
+      <FileName>NanoView\EventArgsClasses.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="SEC.Nanoeye.NanoColumn.ObjectArrayEventHandler" Collapsed="true">
+    <Position X="4.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoColumn\IColumnValue.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="SEC.Nanoeye.NanoImage.ScanDataUpdateDelegate" Collapsed="true">
+    <Position X="30.75" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAABAAAAAAAAAQAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NanoImage\IScanItemEvent.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

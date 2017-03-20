@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E48F9279-8C65-48C1-9795-8A14234A8562}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEC.Nanoeye</RootNamespace>
+    <AssemblyName>Nanoeye</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Nanoeye.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NationalInstruments.Common, Version=9.1.40.163, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.DAQmx, Version=9.5.40.112, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NanoColumn\AIOsem.cs" />
+    <Compile Include="NanoColumn\ColumnBool.cs" />
+    <Compile Include="NanoColumn\ColumnDouble.cs" />
+    <Compile Include="NanoColumn\ColumnDoubleRotation.cs" />
+    <Compile Include="NanoColumn\ColumnInt.cs" />
+    <Compile Include="NanoColumn\ColumnValueBase.cs" />
+    <Compile Include="NanoColumn\Helper.cs" />
+    <Compile Include="NanoColumn\I4000M.cs" />
+    <Compile Include="NanoColumn\IAIOsem.cs" />
+    <Compile Include="NanoColumn\IDistanceCompensator.cs" />
+    <Compile Include="NanoColumn\INormalSEM.cs" />
+    <Compile Include="NanoColumn\IColumnValue.cs" />
+    <Compile Include="NanoColumn\IMiniSEM.cs" />
+    <Compile Include="NanoColumn\ISEMController.cs" />
+    <Compile Include="NanoColumn\IMagCorrector.cs" />
+    <Compile Include="NanoColumn\IWDSplineObjBase.cs" />
+    <Compile Include="NanoColumn\Lens\WDtableSplineWDBase.cs" />
+    <Compile Include="NanoColumn\Lens\WDSplineObjBase.cs" />
+    <Compile Include="NanoColumn\Scan\MagTableBase.cs" />
+    <Compile Include="NanoColumn\Scan\MagTableSpline.cs" />
+    <Compile Include="NanoColumn\Sem4000M.cs" />
+    <Compile Include="NanoColumn\SEMbase.cs" />
+    <Compile Include="NanoColumn\SemNormalSEM.cs" />
+    <Compile Include="NanoColumn\SemMiniSEM.cs" />
+    <Compile Include="NanoColumn\Vacuum\Pirani_NormalSEM_WSA.cs" />
+    <Compile Include="NanoColumn\Vacuum\VacuumMode_Nanoeye001.cs" />
+    <Compile Include="NanoColumn\Vacuum\VacuumState_NormalSEM001.cs" />
+    <Compile Include="NanoColumn\Vacuum\VacuumState_Carryer.cs" />
+    <Compile Include="NanoColumn\Vacuum\VacuumState_MiniSEM.cs" />
+    <Compile Include="NanoeyeDevice\AIOsem.cs" />
+    <Compile Include="NanoeyeDevice\SNE4000M.cs" />
+    <Compile Include="NanoeyeFactory.cs" />
+    <Compile Include="NanoeyeDevice\MiniSEM.cs" />
+    <Compile Include="NanoeyeDevice\NormalSEM.cs" />
+    <Compile Include="NanoImage\ActiveScan.cs" />
+    <Compile Include="NanoImage\DataAcquation\CST\CSTDaq.cs" />
+    <Compile Include="NanoImage\DataAcquation\CST\CSTQueue.cs" />
+    <Compile Include="NanoImage\DataAcquation\CST\FTDI.cs" />
+    <Compile Include="NanoImage\DataAcquation\CST\Utility.cs" />
+    <Compile Include="NanoImage\DataAcquation\iDAQ.cs" />
+    <Compile Include="NanoImage\DataAcquation\IODA\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NanoImage\DataAcquation\IODA\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NanoImage\DataAcquation\IODA\IODAUsb.cs" />
+    <Compile Include="NanoImage\DataAcquation\IODA\IODAUSB_API.cs" />
+    <Compile Include="NanoImage\DataAcquation\NIDaq\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NanoImage\DataAcquation\NIDaq\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NanoImage\DataAcquation\NIDaq\NIDaq6251.cs" />
+    <Compile Include="NanoImage\DataAcquation\NIDaq\NIDaq6351.cs" />
+    <Compile Include="NanoImage\DataAcquation\NIDaq\NIDaq6353.cs" />
+    <Compile Include="NanoImage\DataAcquation\NIDaq\NIDaq6361.cs" />
+    <Compile Include="NanoImage\Generator.cs" />
+    <Compile Include="NanoImage\IScanItemEvent.cs" />
+    <Compile Include="NanoImage\ScanItem\IScanItem.cs" />
+    <Compile Include="NanoImage\ScanItem\SI_SC_LA_Median.cs" />
+    <Compile Include="NanoImage\ScanModifier.cs" />
+    <Compile Include="NanoImage\SettingScanner.cs" />
+    <Compile Include="NanoImage\DataAcquation\VirtualDAQ.cs" />
+    <Compile Include="NanoImage\IActiveScan.cs" />
+    <Compile Include="NanoImage\ScanItem\SI_SC_LA_Blur.cs" />
+    <Compile Include="NanoColumn\MiniSEM_Devices.cs" />
+    <Compile Include="NanoColumn\EnumIControlTableSetStyle.cs" />
+    <Compile Include="NanoStage\DCValues\AxisDC.cs" />
+    <Compile Include="NanoStage\HomeSearch.cs" />
+    <Compile Include="NanoStage\MMCValues\MMCAxis.cs" />
+    <Compile Include="NanoStage\Enumeration.cs" />
+    <Compile Include="NanoStage\IAxis.cs" />
+    <Compile Include="NanoStage\IAxPosition.cs" />
+    <Compile Include="NanoStage\IStage.cs" />
+    <Compile Include="NanoStage\MMCValues\MMCStage.cs" />
+    <Compile Include="NanoStage\SNE5000M\DebugHelper.cs" />
+    <Compile Include="NanoStage\SNE5000M\IStage5000M.cs" />
+    <Compile Include="NanoStage\MMCValues\MMCPosition.cs" />
+    <Compile Include="NanoStage\MMCValues\MMCAPICollection.cs" />
+    <Compile Include="NanoStage\SNE5000M\Stage5000M.cs" />
+    <Compile Include="NanoStage\DCValues\StageDC.cs" />
+    <Compile Include="NanoStage\DCValues\StageDevices.cs" />
+    <Compile Include="NanoView\EventArgsClasses.cs" />
+    <Compile Include="NanoView\IMasterObjet.cs" />
+    <Compile Include="NanoView\INanoView.cs" />
+    <Compile Include="NanoColumn\Scan\Magnification_Nanoeye001.cs" />
+    <Compile Include="NanoColumn\Vacuum\VacuumState_Nanoeye001.cs" />
+    <Compile Include="NanoView\NanoViewBase.cs" />
+    <Compile Include="NanoView\NanoViewMasterSlave.cs" />
+    <Compile Include="NanoView\NanoViewMultiMaster.cs" />
+    <Compile Include="NanoView\PacketFixed8Bytes.cs" />
+    <Compile Include="NanoView\PacketBase.cs" />
+    <Compile Include="NanoView\PacketVairable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CTS-IODA-LIBRARY.pdf" />
+    <None Include="IODAUSB.h" />
+    <Content Include="IODAUSB.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MMCWHP10.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="NanoImage\DataAcquation\IODA\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NanoImage\DataAcquation\NIDaq\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NanoColumn\Align\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GenericSupport\GenericSupport\GenericSupport.csproj">
+      <Project>{A8720C85-F6CF-4834-8386-0C3152205658}</Project>
+      <Name>GenericSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
