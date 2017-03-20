@@ -1,0 +1,1007 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
+using System.Threading;
+using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+
+namespace SEC.GUIelement
+{
+	public partial class ImagePanel_DD : Control, ISupportInitialize
+	{
+		#region Property & Vaiables
+		protected bool _IsRepaintWhenVideoChanged = true;
+		/// <summary>
+		/// Video값이 바뀔경우 ImagePricture를 다시 생성 및 다시 그릴지를 결정한다.
+		/// </summary>
+		[DefaultValue(true)]
+		public virtual bool IsRepaintWhenVideoChanged
+		{
+			get { return _IsRepaintWhenVideoChanged; }
+			set { _IsRepaintWhenVideoChanged = value; }
+		}
+
+		private Bitmap _ImageError = null;
+		/// <summary>
+		/// 에러 상태에서 표시되는 이미지
+		/// </summary>
+		[DefaultValue(null)]
+		public Bitmap ImageError
+		{
+			get { return _ImageError; }
+			set { _ImageError = value; }
+		}
+
+		MouseEventArgs mousemoveEvent = null;
+
+		/// <summary>
+		/// 픽셀의 길(Meter)
+		/// </summary>
+		double lengthPerPixel = 0.0001d;
+
+		Point dzCalPnt;
+
+		//protected RectangleF repaintAreaRect;
+
+		#region Image Data
+		/// <summary>
+		/// Unscaled, Uncliped Image
+		/// </summary>
+		protected Bitmap imagePicture = null;
+
+		/// <summary>
+		/// imagePicture에서 화면에 표시할 영역.
+		/// Digital Zoom 및 Origin에 의해 결정 된다.
+		/// </summary>
+		protected Rectangle displayRect = Rectangle.Empty;
+
+		/// <summary>
+		/// 원본 데이터
+		/// </summary>
+		protected IntPtr imageData = IntPtr.Zero;
+
+		/// <summary>
+		/// 원본 크기
+		/// </summary>
+		protected Size imageSize = Size.Empty;
+		#endregion
+
+		#region Setup
+		#region Micron Bar
+		private bool _MicronEnable = false;
+		/// <summary>
+		/// 미크론바 표시 여부를 결정 한다.
+		/// </summary>
+		[DefaultValue(false)]
+		public bool MicronEnable
+		{
+			get { return _MicronEnable; }
+			set
+			{
+				if (_MicronEnable == value) { return; }
+
+				_MicronEnable = value;
+				this.Invalidate();
+			}
+		}
+
+		private string _MicronDescriptor = "SEC";
+		/// <summary>
+		/// 설명자 내용
+		/// </summary>
+		public string MicronDescriptor
+		{
+			get { return _MicronDescriptor; }
+			set
+			{
+				if (_MicronDescriptor == value) { return; }
+
+				_MicronDescriptor = value;
+				MicronMake();
+			}
+		}
+
+		private string _MicronEghv = "0Kv";
+		/// <summary>
+		/// 고압 표시 문자
+		/// </summary>
+		public string MicronEghv
+		{
+			get { return _MicronEghv; }
+			set
+			{
+				if (_MicronEghv == value) { return; }
+
+				_MicronEghv = value;
+				MicronMake();
+			}
+		}
+
+		private string _MicronMagnification = "x1";
+		/// <summary>
+		/// Dpi를 이용한 표시 배율 정보.
+		/// </summary>
+		public string MicronMagnification
+		{
+			get { return _MicronMagnification; }
+		}
+
+		//// MicronFont
+		//public override Font Font
+		//{
+		//    get
+		//    {
+		//        return base.Font;
+		//    }
+		//    set
+		//    {
+		//        base.Font = value;
+		//    }
+		//}
+
+		[DefaultValue(typeof(Color), "Black")]
+		public override Color BackColor
+		{
+			get { return base.BackColor; }
+			set
+			{
+				if (base.BackColor != value)
+				{
+					base.BackColor = value;
+					MicronMake();
+				}
+			}
+		}
+
+		[DefaultValue(typeof(Color), "White")]
+		public override Color ForeColor
+		{
+			get { return base.ForeColor; }
+			set
+			{
+				if (base.ForeColor != value)
+				{
+					base.ForeColor = value;
+					MicronMake();
+				}
+			}
+		}
+
+		/// <summary>
+		/// MicronBar에 표시되는 문자의 Edge 색.
+		/// </summary>
+		private Color _EdgeColor = Color.Black;
+		[DefaultValue(typeof(Color), "Black")]
+		public Color EdgeColor
+		{
+			get { return _EdgeColor; }
+			set
+			{
+				if (_EdgeColor == value) { return; }
+
+				_EdgeColor = value;
+				MicronMake();
+			}
+		}
+
+		public override Font Font
+		{
+			get { return base.Font; }
+			set
+			{
+				if (value != base.Font)
+				{
+					if (value == null) { base.Font = new Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))); }
+					else { base.Font = value; }
+					MicronMake();
+				}
+			}
+		}
+
+
+		private ScalebarDrawer.TickStyle _MicronType = ScalebarDrawer.TickStyle.Ellipse;
+		[DefaultValue(typeof(ScalebarDrawer.TickStyle), "Ellipse")]
+		public ScalebarDrawer.TickStyle MicronType
+		{
+			get { return _MicronType; }
+			set
+			{
+				if (_MicronType != value)
+				{
+					_MicronType = value;
+					MicronMake();
+				}
+			}
+		}
+		#endregion
+
+		#region Magnification
+		private double pixelMag = 3.0d;
+		/// <summary>
+		/// 640pixel의 길이.cm 단위
+		/// </summary>
+		[DefaultValue(19.2d)]
+		public decimal LenthOf640Pixel
+		{
+			get { return (decimal)(pixelMag * 6.4); }
+			set
+			{
+				if (pixelMag == (double)((double)value / 6.4)) { return; }
+
+				pixelMag = (double)((double)value / 6.4);
+				ChangeMagnification();
+				MicronMake();
+			}
+		}
+
+		private int _Magnification = 1;
+		/// <summary>
+		/// 배율
+		/// </summary>
+		[DefaultValue(1)]
+		public int Magnification
+		{
+			get { return _Magnification; }
+			set
+			{
+				if (_Magnification == value) { return; }
+
+				_Magnification = value;
+				ChangeMagnification();
+				MicronMake();
+			}
+		}
+
+		private bool _AcquiredMagDisplay = false;
+		/// <summary>
+		/// 측정 배율로 표시 여부.
+		/// </summary>
+		[DefaultValue(false)]
+		public bool AcquiredMagDisplay
+		{
+			get { return _AcquiredMagDisplay; }
+			set
+			{
+				if (_AcquiredMagDisplay == value) { return; }
+
+				_AcquiredMagDisplay = value;
+				ChangeMagnification();
+				MicronMake();
+			}
+		}
+		#endregion
+
+		#region Digital Zoom
+		[ComVisible(false)]
+		public enum EDigitalZoomMode : int
+		{
+			Fill = 0,
+			Quarter = 1,
+			Half = 2,
+			Original = 3,
+			Double = 4,
+			Quadruple = 5
+		}
+
+		protected int _DigitalZoomMode = 0;
+		/// <summary>
+		/// 픽셀 확장 및 압축 여부를 결정. 1일 경우 샘플링 결과와 픽셀을 1:1로 매치 시킨다.
+		/// </summary>
+		[DefaultValue(0)]
+		public int DigitalZoomMode
+		{
+			get { return _DigitalZoomMode; }
+			set
+			{
+				if (_DigitalZoomMode == value) { return; }
+
+				if (value < 0)
+				{
+					_DigitalZoomMode = 0;
+				}
+				else
+				{
+					_DigitalZoomMode = value;
+				}
+				ChangeMagnification();
+				MicronMake();
+				ChangeDZreleationValues();
+				MTools.Validate();
+				this.Invalidate();
+			}
+		}
+
+		protected double _DigitalZoomRunning = 1.0d;
+		/// <summary>
+		/// Digital Zoom에 의한 배율
+		/// </summary>
+		[DefaultValue(1.0d)]
+		public double DigitalZoomRunnging
+		{
+			get { return _DigitalZoomRunning; }
+		}
+
+		protected Point _DigitalZoomPoint = new Point(0, 0);
+		public Point DigitalZoomPoint
+		{
+			get { return _DigitalZoomPoint; }
+			set
+			{
+				if (_DigitalZoomPoint == value) { return; }
+
+				if (value == null)
+				{
+					_DigitalZoomPoint = new Point(0, 0);
+				}
+				else
+				{
+					_DigitalZoomPoint = value;
+				}
+				ChangeDZreleationValues();
+				MTools.Validate();
+				this.Invalidate();
+			}
+		}
+		#endregion
+
+		#region Video
+		protected volatile uint[] videoLUT;
+
+		bool videoChanging = false;
+		bool videoRechange = false;
+
+		private double _Contrast = 1.0d;
+		/// <summary>
+		/// Contrast
+		/// </summary>
+		public int Contrast
+		{
+			get { return (int)(Math.Log10(_Contrast) * 100); }
+			set
+			{
+				double temp = Math.Pow(10d, value / 100d);
+				if (_Contrast == temp) { return; }
+
+				_Contrast = temp;
+
+				ChangeVideoLUT();
+			}
+		}
+
+		private int _Brightness = 0;
+		/// <summary>
+		/// Brightness
+		/// </summary>
+		public int Brightness
+		{
+			get { return _Brightness; }
+			set
+			{
+				if (_Brightness == value) { return; }
+
+				_Brightness = value;
+
+				ChangeVideoLUT();
+			}
+
+		}
+
+		private bool _CrossHair = false;
+		/// <summary>
+		/// 십자선 표시 여부.
+		/// </summary>
+		public bool CrossHair
+		{
+			get { return _CrossHair; }
+			set
+			{
+				if (_CrossHair == value) { return; }
+
+				_CrossHair = value;
+				this.Invalidate();
+			}
+		}
+
+		/// <summary>
+		/// 이미지 표시 시작 위치
+		/// </summary>
+		Point origin = new Point(0, 0);
+		#endregion
+
+		#endregion
+
+		protected MeasuringTools.MToolsManager _MTools = null;
+		/// <summary>
+		/// Measruing Tool의 관리자
+		/// </summary>
+		[Browsable(false),
+		DefaultValue(null)]
+		public MeasuringTools.MToolsManager MTools
+		{
+			get { return _MTools; }
+			set
+			{
+				_MTools = value;
+				_MTools.Canvas = this;
+
+				ChangeDZreleationValues();
+				_MTools.Zoom = _DigitalZoomRunning;
+			}
+		}
+
+		/// <summary>
+		/// MTools에 바로 mouse move 이벤트를 날리면 오버헤드가 너무 크므로 특정 주기마다 날리도록 함.
+		/// </summary>
+		System.Windows.Forms.Timer mtoolMouseMoveTimer;
+		private Kikwak.Controls.ScaleBar.ScaleBar scaleBar1;
+
+		/// <summary>
+		/// 초기화 중인지 여부.
+		/// </summary>
+		private bool initing = false;
+		#endregion
+
+		#region 생성자 & 소멸자 & 초기화
+		public ImagePanel_DD()
+		{
+			InitializeComponent();
+
+			SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+			SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+			SetStyle(ControlStyles.UserPaint, true);
+			SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+			//imagePicture = new Bitmap(1280, 960, PixelFormat.Format32bppArgb);
+			//Graphics g = Graphics.FromImage(imagePicture);
+			//g.Clear(Color.Gray);
+			//g.Dispose();
+
+			_MTools = new MeasuringTools.MToolsManager();
+			_MTools.Canvas = this;
+
+			mousemoveEvent = null;
+			mtoolMouseMoveTimer = new System.Windows.Forms.Timer();
+			mtoolMouseMoveTimer.Interval = 200;
+			mtoolMouseMoveTimer.Tick += new EventHandler(mtoolMouseMoveTimer_Tick);
+			mtoolMouseMoveTimer.Start();
+
+			//ChangeVideoLUT();
+		}
+
+		public void BeginInit()
+		{
+			initing = true;
+		}
+
+		public void EndInit()
+		{
+			initing = false;
+
+			ChangeVideoLUT();
+			ChangeMagnification();
+			ChangeDZreleationValues();
+			if (imageData != IntPtr.Zero)
+			{
+				this.Invalidate();
+			}
+			MicronMake();
+			this.Invalidate();
+		}
+		#endregion
+
+		#region override
+
+		protected override void OnSizeChanged(EventArgs e)
+		{
+			// 사이즈가 너무 작은 경우 회색 화면만 표시 하도록 함.
+			if ((this.Width < 320) || (this.Height < 240))
+			{
+				//imageRepaint = new Bitmap(this.Width, this.Height);
+				this.BackgroundImage = _ImageError;
+				this.Invalidate();
+				return;
+			}
+
+			this.BackgroundImage = null;
+
+			ChangeMagnification();
+			ChangeDZreleationValues();
+			MicronMake();
+			MTools.Validate();
+
+			Debug.WriteLine(this.ClientRectangle.ToString(), "Paint Panel - " + this.Name);
+
+			base.OnSizeChanged(e);
+
+		}
+
+		public override string ToString()
+		{
+			return "Scan paint - " + this.Name;
+		}
+
+		protected override void OnPaint(PaintEventArgs e)
+		{
+			Graphics g = e.Graphics;
+			
+			//CompositingQuality cq = g.CompositingQuality;
+			//InterpolationMode im = g.InterpolationMode;
+			//SmoothingMode sm = g.SmoothingMode;
+
+			g.CompositingQuality = CompositingQuality.HighQuality;
+			g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+			g.SmoothingMode = SmoothingMode.HighQuality;
+
+			if (imagePicture != null)
+			{
+				lock (imagePicture)
+				{
+					g.DrawImage(imagePicture, displayRect);
+				}
+			}
+
+
+			_MTools.Draw(g);
+
+			if (_MicronEnable)
+			{
+				g.DrawImage(micronBM,
+					new RectangleF(
+					//(float)origin.X,
+					//(float)(origin.Y + (960 - 64) * _DigitalZoomRunning),
+					//(float)(1280 * _DigitalZoomRunning),
+					//(float)(64 * _DigitalZoomRunning)));
+
+					(float)origin.X,
+					(float)(origin.Y + (imagePicture.Height * 14 / 15) * _DigitalZoomRunning),
+					(float)(imagePicture.Width * _DigitalZoomRunning),
+					(float)(imagePicture.Height / 15 * _DigitalZoomRunning)));
+			}
+
+			if (_CrossHair)
+			{
+				g.DrawLine(Pens.Blue, (int)(origin.X + origin.X + imagePicture.Width * _DigitalZoomRunning) / 2, origin.Y, (int)(origin.X + origin.X + imagePicture.Width * _DigitalZoomRunning) / 2, (int)(origin.Y + imagePicture.Height * _DigitalZoomRunning));
+				g.DrawLine(Pens.Blue, origin.X, (int)(origin.Y + origin.Y + imagePicture.Height * _DigitalZoomRunning) / 2, (int)(origin.X + imagePicture.Width * _DigitalZoomRunning), (int)(origin.Y + origin.Y + imagePicture.Height * _DigitalZoomRunning) / 2);
+			}
+
+			base.OnPaint(e);
+		}
+
+		protected override void OnMouseDown(MouseEventArgs e)
+		{
+			base.OnMouseDown(e);
+
+			if (e.Button == MouseButtons.Middle)
+			{
+				dzCalPnt = e.Location;
+			}
+			else
+			{
+				if (_MTools.Visiable) { _MTools.MouseDown(e.Location, e.Button); }
+			}
+		}
+
+		void mtoolMouseMoveTimer_Tick(object sender, EventArgs e)
+		{
+			if (mousemoveEvent != null)
+			{
+				if (_MTools.Visiable) { _MTools.MouseMove(mousemoveEvent.Location, mousemoveEvent.Button); }
+
+				mousemoveEvent = null;
+			}
+		}
+
+		protected override void OnMouseUp(MouseEventArgs e)
+		{
+			if (_MTools.Visiable) { _MTools.MouseUp(e.Location, e.Button); }
+
+			base.OnMouseUp(e);
+		}
+
+		protected override void OnMouseMove(MouseEventArgs e)
+		{
+			if (e.Button == MouseButtons.Middle)
+			{
+				DigitalZoomPoint = new Point(_DigitalZoomPoint.X + (e.X - dzCalPnt.X), _DigitalZoomPoint.Y + (e.Y - dzCalPnt.Y));
+				dzCalPnt = e.Location;
+			}
+			else
+			{
+				if (_MTools.Visiable) { mousemoveEvent = e; }
+			}
+
+			base.OnMouseMove(e);
+		}
+
+		protected override void OnMouseDoubleClick(MouseEventArgs e)
+		{
+			base.OnMouseDoubleClick(e);
+
+			if (e.Button == MouseButtons.Middle)
+			{
+				DigitalZoomPoint = new Point(0, 0);
+			}
+		}
+		#endregion
+
+		#region 설정 변경에 따른 변수 수정용 Method
+		/// <summary>
+		/// Contrast 및 Brightness가 바뀐 경우.
+		/// </summary>
+		protected unsafe void ChangeVideoLUT()
+		{
+			if (initing) { return; }
+
+			videoRechange = true;
+
+			if (videoChanging) { return; }
+			videoChanging = true;
+
+			while (videoRechange)
+			{
+				videoRechange = false;
+
+				uint[] lut = new uint[65536];
+				int temp;
+
+				fixed (uint* ptr = lut)
+				{
+					uint* pLut = ptr;
+					for (int i = short.MinValue; i < short.MaxValue; i++)
+					{
+						temp = (int)(i * _Contrast + _Brightness);
+						temp = (temp > 255) ? 255 : temp;
+						temp = (temp < 0) ? 0 : temp;
+						*pLut++ = (uint)((uint)255 << 24) | (uint)(temp << 16) | (uint)(temp << 8) | (uint)(temp);
+					}
+				}
+
+				if (videoRechange) { continue; }
+
+				videoLUT = lut;
+
+
+				if (_IsRepaintWhenVideoChanged)
+				{
+					if (imageSize.Width >= 320)
+					{
+						DataToImage();
+						this.Invalidate();
+					}
+				}
+			}
+			videoChanging = false;
+		}
+
+		protected void ChangeMagnification()
+		{
+			if (initing) { return; }
+
+			if (_DigitalZoomMode == 0)
+			{
+				int disH, disW;
+				if (this.ClientSize.Height < this.ClientSize.Width * 0.75d) // 표시 높이보다 화면의 높이가 낮은 경우.
+				{
+					disH = this.ClientSize.Height;
+					disW = (int)(this.ClientSize.Height * 4 / 3);
+				}
+				else
+				{
+					disW = this.ClientSize.Width;
+					disH = (int)(disW * 3 / 4);
+				}
+
+				_DigitalZoomRunning = disW / imagePicture.Width;
+			}
+			else
+			{
+				_DigitalZoomRunning = Math.Pow(2, _DigitalZoomMode - 3);
+			}
+
+			
+
+			lengthPerPixel = 0.0001d / _Magnification / _DigitalZoomRunning;
+
+			if (_MTools != null)
+			{
+				_MTools.Zoom = _DigitalZoomRunning;
+			}
+
+			if (_AcquiredMagDisplay)
+			{
+				_MicronMagnification = "x" + SEC.GenericSupport.MathematicsSupport.NumberConverter.ToUnitString(_Magnification, 0, 3, false, (char)0);
+			}
+			else
+			{
+				_MicronMagnification = "x" + SEC.GenericSupport.MathematicsSupport.NumberConverter.ToUnitString(_Magnification * _DigitalZoomRunning, 0, 3, false, (char)0);
+			}
+
+			if (_MTools != null)
+			{
+				_MTools.PixelLength = (float)lengthPerPixel;
+				Debug.WriteLine(_MTools.PixelLength.ToString(), "Pixel Length");
+			}
+		}
+
+		protected void ChangeDZreleationValues()
+		{
+			if (initing) { return; }
+
+			origin.X = (int)(this.ClientSize.Width / 2f + (imagePicture.Width / -2f + _DigitalZoomPoint.X) * _DigitalZoomRunning);
+			origin.Y = (int)(this.ClientSize.Height / 2f + (imagePicture.Height / -2f + _DigitalZoomPoint.Y) * _DigitalZoomRunning);
+
+			if (imagePicture != null)
+			{
+				displayRect = new Rectangle(origin, new Size((int)(imagePicture.Width * _DigitalZoomRunning), (int)(imagePicture.Height * _DigitalZoomRunning)));
+			}
+
+			if (_MTools != null)
+			{
+				_MTools.Origin = origin;
+
+				Debug.WriteLine(origin, "MTools Origin");
+			}
+		}
+		#endregion
+
+		#region Image 수정
+		/// <summary>
+		/// Data를 Image에 쓴다.
+		/// 직접 사용 하지 말고 ChangeImageProcess 함수를 이용 할 것!!! (PaintPanel을 위해)
+		/// </summary>
+		/// <param name="data">원본 데이타의 포인터</param>
+		/// <param name="bm">그려질 </param>
+		/// <param name="width"></param>
+		/// <param name="startLine"></param>
+		/// <param name="lineLength"></param>
+		/// <param name="videoLUT"></param>
+		protected virtual unsafe void DataToImage()
+		{
+			Bitmap bm = new Bitmap(imageSize.Width, imageSize.Height);
+
+			short * pData = (short*)imageData.ToInt32();
+			int paintLength =imageSize.Width * imageSize.Height;
+
+			BitmapData bd = bm.LockBits(new Rectangle(0, 0, imageSize.Width, imageSize.Height), ImageLockMode.WriteOnly, PixelFormat.Format32bppArgb);
+
+			uint* bmPnt = (uint*)(bd.Scan0.ToInt32());
+
+			unchecked
+			{
+				for (int len = 0; len < paintLength; len++)
+				{
+					*bmPnt++ = videoLUT[*pData++ + 32768];
+				}
+			}
+
+			bm.UnlockBits(bd);
+
+			imagePicture = bm;
+		}
+		#endregion
+
+		#region MicronBar
+		private Rectangle micronArea = Rectangle.Empty;
+
+		private Bitmap micronBM = new Bitmap(1, 1);
+
+		/// <summary>
+		/// 미크론 바 이미지를 생성한다.
+		/// </summary>
+		private void MicronMake()
+		{
+			if (initing) { return; }
+
+			RectangleF scalebarRect = new RectangleF(0, 0, 0, 0);
+			RectangleF desciptorRect = new RectangleF(0, 0, 0, 0);
+			RectangleF hvRect = new RectangleF(0, 0, 0, 0);
+			RectangleF magRect = new RectangleF(0, 0, 0, 0);
+
+			//micronArea = new Rectangle(0, this.Height * 14 / 15, this.Width, this.Height / 15);
+
+			micronBM = ScalebarDrawer.MakeMicronbar(new Size(imagePicture.Width, imagePicture.Height/15),
+													this.BackColor,
+													this.ForeColor,
+													this.EdgeColor,
+													this.Font,
+													_MicronDescriptor,
+													_MicronEghv,
+													_MicronMagnification,
+													lengthPerPixel * _DigitalZoomRunning,
+													_Magnification * _DigitalZoomRunning,
+													new Padding(0, 0, 0, 0),
+													_MicronType);
+			this.Invalidate(micronArea);
+		}
+
+		#endregion
+
+		#region Import & Export
+		public virtual Bitmap ExportPicture()
+		{
+			return ExportPicture(true);
+		}
+
+		public virtual Bitmap ExportPicture(bool withMicron)
+		{
+			Bitmap bm;
+			lock (imagePicture) { bm = new Bitmap(imagePicture); }
+			if (withMicron)
+			{
+				return MakeExportImage(bm);
+			}
+			else
+			{
+				return bm;
+			}
+		}
+
+		protected Bitmap MakeExportImage(Bitmap bm)
+		{
+			if (_MicronEnable)
+			{
+				Bitmap micron = ScalebarDrawer.MakeMicronbar(new Size(bm.Width, bm.Height / 15),
+												this.BackColor,
+												this.ForeColor,
+												this.EdgeColor,
+												this.Font,
+												_MicronDescriptor,
+												_MicronEghv,
+												("x" + SEC.GenericSupport.MathematicsSupport.NumberConverter.ToUnitString(_Magnification, 0, 3, false, (char)0)),
+												lengthPerPixel * imagePicture.Width / bm.Width,
+												_Magnification,
+												new Padding(0, 0, 0, 0),
+												 ScalebarDrawer.TickStyle.Ellipse);
+				Graphics g = Graphics.FromImage(bm);
+				g.DrawImage(micron, new Point(0, bm.Height * 14 / 15));
+				g.Dispose();
+
+			}
+			return bm;
+		}
+
+		/// <summary>
+		/// Image data(원본)를 가져온다.
+		/// </summary>
+		/// <returns></returns>
+		public virtual unsafe short[,] ExportData()
+		{
+			short[,] result = new short[imageSize.Height, imageSize.Width];
+
+			fixed (short* pntResult = result)
+			{
+				short* pResult = pntResult;
+				short* pData = (short*)imageData.ToInt32();
+
+				int length = imageSize.Width * imageSize.Height;
+
+				while (length > 0)
+				{
+					*pResult++ = *pData++;
+					length--;
+				}
+			}
+
+			return result;
+		}
+
+		/// <summary>
+		/// Image bitmap을 설정한다.
+		/// </summary>
+		/// <param name="bm"></param>
+		public virtual unsafe void ImportPicture(Bitmap bm)
+		{
+			if (imageData != IntPtr.Zero)
+			{
+				SEC.GenericSupport.GHeapManager.Free(ref imageData, this.ToString());
+			}
+
+			Bitmap tmp = new Bitmap(bm);
+
+			imageSize = new Size(tmp.Width, tmp.Height);
+
+			SEC.GenericSupport.GHeapManager.Alloc(ref imageData, tmp.Width * tmp.Height * 2, this.ToString());
+
+			BitmapData bd = tmp.LockBits(new Rectangle(0, 0, tmp.Width, tmp.Height), ImageLockMode.ReadOnly, tmp.PixelFormat);
+
+			short* pntDataOri = (short*)imageData.ToInt32();
+
+			int length = tmp.Width * tmp.Height;
+
+			switch (tmp.PixelFormat)
+			{
+			case PixelFormat.Format32bppArgb:
+				uint* bmPnt = (uint*)(bd.Scan0.ToInt32());
+				for (int i = 0; i < length; i++)
+				{
+					*pntDataOri++ = (short)((*bmPnt++) & 0xff);
+				}
+				break;
+			case PixelFormat.Format8bppIndexed:
+				byte* bmPntByte = (byte*)(bd.Scan0.ToInt32());
+				for (int i = 0; i < length; i++)
+				{
+					*pntDataOri++ = (short)((*bmPntByte++) & 0xff);
+				}
+				break;
+			}
+			tmp.UnlockBits(bd);
+
+			imagePicture = tmp;
+
+			//imagePicture.Save("c:\\test3.bmp");
+
+			this.Invalidate();
+		}
+
+		/// <summary>
+		/// 이미지 데이터를 설정한다.
+		/// </summary>
+		/// <param name="datas"></param>
+		public virtual unsafe void ImportData(short[,] datas)
+		{
+			int length = datas.Length;
+
+			if (imageData != IntPtr.Zero)
+			{
+				SEC.GenericSupport.GHeapManager.Free(ref imageData, this.ToString());
+			}
+			SEC.GenericSupport.GHeapManager.Alloc(ref imageData, length * 2, this.ToString());
+
+			fixed (short* pntData = datas)
+			{
+				short* pData = pntData;
+				short* pImg = (short*)imageData.ToInt32();
+
+				while (length > 0)
+				{
+					*pImg++ = *pData++;
+					length--;
+				}
+			}
+
+			imageSize = new Size(datas.GetLength(1), datas.GetLength(0));
+
+			DataToImage();
+			this.Invalidate();
+		}
+		#endregion
+
+		#region 기타
+		/// <summary>
+		/// Control 좌표의 Point를 이미지 좌표로 변환 한다.
+		/// </summary>
+		/// <param name="pnt">Control 기준 Point</param>
+		/// <returns>Image 기준 Point</returns>
+		public Point PointToImage(Point pnt)
+		{
+			int x = (int)((pnt.X - origin.X) / DigitalZoomRunnging);
+			int y = (int)((pnt.Y - origin.Y) / DigitalZoomRunnging);
+			return new Point(x, y);
+		}
+		#endregion
+
+		private void InitializeComponent()
+		{
+			this.scaleBar1 = new Kikwak.Controls.ScaleBar.ScaleBar();
+			this.SuspendLayout();
+			// 
+			// scaleBar1
+			// 
+			this.scaleBar1.LargeTick = new System.Drawing.SizeF(8F, 16F);
+			this.scaleBar1.Location = new System.Drawing.Point(0, 0);
+			this.scaleBar1.Name = "scaleBar1";
+			this.scaleBar1.Size = new System.Drawing.Size(0, 0);
+			this.scaleBar1.SmallTick = new System.Drawing.SizeF(8F, 8F);
+			this.scaleBar1.TabIndex = 0;
+			this.scaleBar1.Text = "scaleBar1";
+			this.scaleBar1.TickStyle = Kikwak.Controls.ScaleBar.TickStyle.Ellipse;
+			this.ResumeLayout(false);
+
+		}
+	}
+}

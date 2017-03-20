@@ -1,0 +1,135 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23DAB638-D17C-4B8B-8C91-C8147F006757}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kikwak.Controls</RootNamespace>
+    <AssemblyName>ImageControls</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlignmentHorizontal.cs" />
+    <Compile Include="AlignmentVertical.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="BitmapButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BitmapCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BitmapButtonDesigner.cs" />
+    <Compile Include="ImageControls.cs" />
+    <Compile Include="ImageCrossHair.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BitmapLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BitmapPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BitmapRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InfoPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InfoPanel.Designer.cs">
+      <DependentUpon>InfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KProgressBar.Designer.cs">
+      <DependentUpon>KProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioKnob.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadioKnob.Designer.cs">
+      <DependentUpon>RadioKnob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScaleBar\Engineer.cs" />
+    <Compile Include="ScaleBar\ScaleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScaleBar\ScaleBar.Designer.cs">
+      <DependentUpon>ScaleBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScaleBar\ScaleBarAlignment.cs" />
+    <Compile Include="ScaleBar\TickStyle.cs" />
+    <Compile Include="StaticLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StaticLabel.Designer.cs">
+      <DependentUpon>StaticLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticLabelDesigner.cs" />
+    <Compile Include="ImageLabelDesigner.cs" />
+    <Compile Include="BitmapPanelDesigner.cs" />
+    <Compile Include="BitmapLamp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RadioKnob.resx">
+      <DependentUpon>RadioKnob.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScaleBar\ScaleBar.resx">
+      <DependentUpon>ScaleBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
