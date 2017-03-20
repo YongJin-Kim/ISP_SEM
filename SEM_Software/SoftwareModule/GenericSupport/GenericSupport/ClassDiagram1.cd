@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SEC.GenericSupport.Converter" Collapsed="true">
+    <Position X="26" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Converter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.StringEventArg" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.GHeapManager" Collapsed="true">
+    <Position X="24.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>GHeapManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.SingleForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IYAAACCAICAQBAgAEAIAgAAAAAAEAEAAAAAAAACAgAE=</HashCode>
+      <FileName>SingleForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControlBool" Collapsed="true">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACCAABCAAAAAAAAAAEAAQAEAAAAgAAAAQAA=</HashCode>
+      <FileName>DataType\ControlBool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControlDouble" Collapsed="true">
+    <Position X="12.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataType\ControlDouble.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControlGenericBase&lt;T&gt;" Collapsed="true">
+    <Position X="12.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIIACAACiAABCACAAIACBgAFAAAAEAAAAgAAAA0AA=</HashCode>
+      <FileName>DataType\ControlGenericBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControlInt" Collapsed="true">
+    <Position X="15" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataType\ControlInt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControllerBase" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAEAKACCgCgxAACAgAKhQAAAEAACAEAAEAAQAAAAA=</HashCode>
+      <FileName>DataType\ControllerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControllerEnumerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAAAAACAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>DataType\ControllerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.CommunicationErrorOccuredEventArgs" Collapsed="true">
+    <Position X="20.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataType\ControllerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControlLong" Collapsed="true">
+    <Position X="10.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataType\ControlLong.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.ControlValueBase" Collapsed="true">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACCACCCAQACEAAAIqAQgAAAAAQBAAAIAAQAAQEA=</HashCode>
+      <FileName>DataType\ControlValueBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.Radio" Collapsed="true">
+    <Position X="3.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACCAAACACAAABAAAAAAAAAAAAAAgEAAAQAA=</HashCode>
+      <FileName>DataType\Radio.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.SplineDouble" Collapsed="true">
+    <Position X="12.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAJAACCAQSCYAAIAAACAAIoAABAAAAAggAgAACM=</HashCode>
+      <FileName>DataType\SplineDouble.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.TableBase" Collapsed="true">
+    <Position X="8.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAACCAACCICAAAQABAAIAACBAAIIBAAAAAQAA=</HashCode>
+      <FileName>DataType\TableBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.Transform2DDoubleSpline" Collapsed="true">
+    <Position X="17.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAIEAAACApAgIQBAAAAIAAABCAAAAAAgAAgBE=</HashCode>
+      <FileName>DataType\Transform2DDoubleSpline.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.DataType.Transfrom2DDouble" Collapsed="true">
+    <Position X="17.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OAAADAACACiAAECAASAADACCAAACBAEABEAAgAgQ4AA=</HashCode>
+      <FileName>DataType\Transfrom2DDouble.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SEC.GenericSupport.Diagnostics.Helper" Collapsed="true">
+    <Position X="27.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAQAAAAAAAAIAAAAIAAAAAAAA=</HashCode>
+      <FileName>Diagnostics\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.Diagnostics.TextBoxTraceListner" Collapsed="true">
+    <Position X="31.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Diagnostics\TextBoxTraceListner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.Diagnostics.TraceVer1" Collapsed="true">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAAAAAEBAAA=</HashCode>
+      <FileName>Diagnostics\TraceVer1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.ImageProcess.ImageAnalyser" Collapsed="true">
+    <Position X="29.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAABAAAAAAAA=</HashCode>
+      <FileName>ImageProcess\ImageAnalyser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.Mathematics.Geometry" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAMAAAAAIAAAAAAAAARAAAAA=</HashCode>
+      <FileName>Mathematics\Geometry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.Mathematics.Helper" Collapsed="true">
+    <Position X="26" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Mathematics\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.Mathematics.Interpolation" Collapsed="true">
+    <Position X="31.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAQCACAAAgAAAAAAAEAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Mathematics\Interpolation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.Mathematics.NumberConverter" Collapsed="true">
+    <Position X="26" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAABAAAAAAAEAAAAAAAAQAAAAQAAAACA=</HashCode>
+      <FileName>Mathematics\NumberConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.FourierTransform.ComplexArray" Collapsed="true">
+    <Position X="26" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEADAQAAAAgAEQIhACAAAgAAEAAEAAACAAAAgAA=</HashCode>
+      <FileName>Mathematics\FourierTransform\ComplexArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.FourierTransform.ComplexMath" Collapsed="true">
+    <Position X="27.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAASBAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Mathematics\FourierTransform\ComplexMath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.FourierTransform.ComplexStats" Collapsed="true">
+    <Position X="29.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAQAAAAABAAABBAAEgAAAAAAAAAQ=</HashCode>
+      <FileName>Mathematics\FourierTransform\ComplexStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.Nanoeye.FourierTransform.Fourier" Collapsed="true">
+    <Position X="27.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gegFAKgAgAgQAAICCIAGgBRCABEBAEAABAAAAgAgAKA=</HashCode>
+      <FileName>Mathematics\FourierTransform\Fourier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.WindowsAPI.Gdi32" Collapsed="true">
+    <Position X="29.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACIAAACAAAAAAAAACAAAGAAAABA=</HashCode>
+      <FileName>WindowsAPI\Gdi32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.WindowsAPI.Kernel32" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>WindowsAPI\Kernel32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.WindowsAPI.User32" Collapsed="true">
+    <Position X="24.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hABAgAAABhAAAkAEAAAADAMIAAAAAAACEAAAAAA8EQI=</HashCode>
+      <FileName>WindowsAPI\User32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEC.GenericSupport.WindowsAPI.WindowsMessage" Collapsed="true">
+    <Position X="31.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>2KFJj+huSiNJRrmgfs8aX+LcBl79vcL7au5jt/9n9/Q=</HashCode>
+      <FileName>WindowsAPI\WindowsMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SEC.GenericSupport.Mathematics.Engineer" Collapsed="true">
+    <Position X="27.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAACAAEAAAAAAAkAAAQAAAAEAAgAAAAAAA=</HashCode>
+      <FileName>Mathematics\Engineer.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SEC.Nanoeye.FourierTransform.Complex" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAQABAABgwM9QUAAAAAAwEAEIAAAAAgACAAAzA=</HashCode>
+      <FileName>Mathematics\FourierTransform\Complex.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="SEC.Nanoeye.FourierTransform.ComplexF" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAQAAAABgwM9QcAAAAAAwFAEIAAAAAgACAAAzA=</HashCode>
+      <FileName>Mathematics\FourierTransform\ComplexF.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Interface Name="SEC.GenericSupport.DataType.IControlBool" Collapsed="true">
+    <Position X="14.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>DataType\IControlBool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.IControlDouble" Collapsed="true">
+    <Position X="16.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAAAAAAAAAAAAAAABAAFAAAAAAAAAgAAAAkAA=</HashCode>
+      <FileName>DataType\IControlDouble.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.IControlInt" Collapsed="true">
+    <Position X="19" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAAAAAAAAAAAAAAABAAFAAAAAAAAAgAAAAkAA=</HashCode>
+      <FileName>DataType\IControlInt.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.IController" Collapsed="true">
+    <Position X="22" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAEAAACAgAAwAACAAAChQAAAEAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DataType\IController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.IControlLong" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAAAAAAAAAAAAAAABAAFAAAAAAAAAgAAAAkAA=</HashCode>
+      <FileName>DataType\IControlLong.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.IControlShort" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAAAAAAAAAAAAAAABAAFAAAAAAAAAgAAAAkAA=</HashCode>
+      <FileName>DataType\IControlShort.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.IRadio" Collapsed="true">
+    <Position X="10" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>DataType\IRadio.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.ISplineDouble" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DataType\ISplineDouble.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.ITable" Collapsed="true">
+    <Position X="12.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAACAAAQABAAAAACAAAIIBAAAAAAAA=</HashCode>
+      <FileName>DataType\ITable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.ITableContainner" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAIAAAAAAAAAIAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataType\ITableContainner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.ITransform2DDouble" Collapsed="true">
+    <Position X="21.25" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACAACAAAAAAAAAQAAAACCAAACBAAAAEAAAAAQAAA=</HashCode>
+      <FileName>DataType\ITransform2DDouble.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.ITransfrom2DDoubleSpline" Collapsed="true">
+    <Position X="21" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAACAAAAAAAAAABA=</HashCode>
+      <FileName>DataType\ITransfrom2DDoubleSpline.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SEC.GenericSupport.DataType.IValue" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCACACAAACAAAAICAQgAAAAAQAAAAAAAAAAQAA=</HashCode>
+      <FileName>DataType\IValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SEC.Nanoeye.FourierTransform.FourierDirection" Collapsed="true">
+    <Position X="24.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Mathematics\FourierTransform\FourierDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
